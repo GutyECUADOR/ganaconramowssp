@@ -47,7 +47,11 @@ class routeModel {
             // Social Logins
             case 'loginfacebook':
                 $contenido = "views/modulos/facebookView.php";
-                break; 
+                break;
+            
+            case 'logingoogle':
+                $contenido = "views/modulos/googleView.php";
+                break;
             
             default:
                 $contenido = "views/modulos/bienvenidosView.php";

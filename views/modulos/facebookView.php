@@ -6,6 +6,9 @@
     try {
       $login = new App\Controllers\loginController();
       $userProfile = $login->loginfacebook();
+
+      //$existinDB = $login->verifyUserByEmail($userProfile->email);
+
     } catch (\Throwable $th) {
       header("location: index.php?action=inicio'");  
     }
@@ -36,7 +39,7 @@
                   <div class="row no-gutters justify-content-center">
                     <div class="text-left col-lg-8">
                       <form method="POST" autocomplete="off">
-                        <?php $login->actionCatcherController(); ?>
+                        <?php $login->loginWithFacebook() ?>
                         <div class="form-group">
                           <label for="cedula">Nombres</label>
                           <input class="form-control form-control-lg" type="text" name="nombres" id="nombres" value="<?php echo $userProfile->displayName?>"/>
@@ -59,10 +62,6 @@
                           <button type="submit" class="btn btn-primary btn-block">Finalizar Registro</button>
                         </div>
                         
-                        <div class="text-center mt-3">
-                            <span>¿No tienes una cuenta? <a href="?action=register">Crea una aqui</a>
-                            </span>
-                        </div>
                       </form>
                     </div>
                     

@@ -40,8 +40,6 @@ class loginController  {
         }
     }
 
-   
-   
     /*Crea elementos HTML opcion button para ser listados en el select*/
     public function getAllDataBaseList(){
         $opciones = $this->loginModel->getAllDataBaseList();
@@ -67,4 +65,25 @@ class loginController  {
         $login->disconnect();
         return $userProfile;
     }
+
+    public function logingoogle() {
+        
+        $config = [
+            'callback' => 'http://localhost/ganaconramowssp/?action=logingoogle', // or Hybridauth\HttpClient\Util::getCurrentUrl()
+            'keys' => ['id' => '9864280064-d278tg8ih4tpcbjglc0fcpa8nvt19avf.apps.googleusercontent.com', 'secret' => 'xHsSBRUnNVbS83oAaMVNt3NZ'], // Your application credentials
+        ];
+
+        $login = new \Hybridauth\Provider\Google($config);
+        $login->authenticate();
+        $userProfile = $login->getUserProfile();
+        $login->disconnect();
+        return $userProfile;
+    }
+
+    public function loginWithFacebook() {
+
+    }
+
+
+    
 }

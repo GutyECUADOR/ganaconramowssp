@@ -51,7 +51,7 @@ use App\Controllers\loginController;
                           <a href="?action=loginfacebook" class="btn btn-block btn-social btn-facebook text-center text-light">
                             <span class="fa fa-facebook"></span> Ingresa con Facebook
                           </a>
-                          <a class="btn btn-block btn-social btn-google text-center text-light">
+                          <a href="?action=logingoogle" class="btn btn-block btn-social btn-google text-center text-light">
                             <span class="fa fa-google"></span> Ingresa con Google
                           </a>
                         </div>
