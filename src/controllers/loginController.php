@@ -53,4 +53,18 @@ class loginController  {
     
         }
     }
+
+    public function loginfacebook() {
+        
+        $config = [
+            'callback' => 'http://localhost/ganaconramowssp/?action=loginfacebook', // or Hybridauth\HttpClient\Util::getCurrentUrl()
+            'keys' => ['id' => '240255507681030', 'secret' => '2720cc87b649274edb2e0459075bf3ca'], // Your application credentials
+        ];
+
+        $login = new \Hybridauth\Provider\Facebook($config);
+        $login->authenticate();
+        $userProfile = $login->getUserProfile();
+        $login->disconnect();
+        return $userProfile;
+    }
 }

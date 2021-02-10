@@ -24,6 +24,7 @@
       <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link href="assets/css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
       <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

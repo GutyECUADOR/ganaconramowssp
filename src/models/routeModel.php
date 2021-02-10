@@ -44,6 +44,11 @@ class routeModel {
                 $contenido = "views/modulos/cerrarSesion.php";
                 break; 
 
+            // Social Logins
+            case 'loginfacebook':
+                $contenido = "views/modulos/facebookView.php";
+                break; 
+            
             default:
                 $contenido = "views/modulos/bienvenidosView.php";
                 break;

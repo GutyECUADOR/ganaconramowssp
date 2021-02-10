@@ -1,12 +1,16 @@
-<?php 
-
-use App\Controllers\loginController;
+<?php
 
     if (isset($_SESSION["usuarioRUC"])){
         header('location:index.php?action=inicio');  
     }
+    try {
+      $login = new App\Controllers\loginController();
+      $userProfile = $login->loginfacebook();
+    } catch (\Throwable $th) {
+      header("location: index.php?action=inicio'");  
+    }
+
     
-    $login = new loginController();
     
 ?>
 
@@ -15,7 +19,6 @@ use App\Controllers\loginController;
         <div class="container align-self-start">
           <div class="row">
             <div class="col text-center">
-              
             </div>
             <!--end of col-->
           </div>
@@ -26,14 +29,22 @@ use App\Controllers\loginController;
                 <div class="card-body">
                   <div class="mb-2">
                     <img alt="Image" src="assets/img/logo.png" style="width: 40%;"/>
-                    <h1 class="h2 mb-2 mt-3">Hola de nuevo</h1>
-                    <span>Ingresa a tu cuenta y revisa tu acumulado</span>
+                    <h1 class="h2 mb-2 mt-3">Casi listo :D !</h1>
+                    <span>Por favor completa los siguientes datos para finalizar tu registro</span>
                    
                   </div>
                   <div class="row no-gutters justify-content-center">
                     <div class="text-left col-lg-8">
                       <form method="POST" autocomplete="off">
                         <?php $login->actionCatcherController(); ?>
+                        <div class="form-group">
+                          <label for="cedula">Nombres</label>
+                          <input class="form-control form-control-lg" type="text" name="nombres" id="nombres" value="<?php echo $userProfile->displayName?>"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="cedula">Email</label>
+                          <input class="form-control form-control-lg" type="text" name="nombres" id="nombres" value="<?php echo $userProfile->email?>"/>
+                        </div>
                         <div class="form-group">
                           <label for="cedula">Documento de Identidad</label>
                           <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />
@@ -45,16 +56,9 @@ use App\Controllers\loginController;
                           </small>
                         </div>
                         <div class="text-center mt-3">
-                          <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                          <button type="submit" class="btn btn-primary btn-block">Finalizar Registro</button>
                         </div>
-                        <div class="text-center mt-3">
-                          <a href="?action=loginfacebook" class="btn btn-block btn-social btn-facebook text-center text-light">
-                            <span class="fa fa-facebook"></span> Ingresa con Facebook
-                          </a>
-                          <a class="btn btn-block btn-social btn-google text-center text-light">
-                            <span class="fa fa-google"></span> Ingresa con Google
-                          </a>
-                        </div>
+                        
                         <div class="text-center mt-3">
                             <span>¿No tienes una cuenta? <a href="?action=register">Crea una aqui</a>
                             </span>
