@@ -51,6 +51,14 @@
     
 }
 
+.terms-box {
+  padding: 10px;
+  height: 400px;
+  overflow: auto;
+  font-size: 0.7rem;
+}
+
+
 .float{
 	position:fixed;
 	width:60px;

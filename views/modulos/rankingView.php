@@ -13,7 +13,7 @@
                 </span>
 
                 <div 
-                  class="flipper flipper-dark flipper-dark-labels" 
+                  class="flipper" 
                   data-datetime="2021-03-14 00:00:00"
                   data-reverse="true" 
                   data-template="d|H|i|s" 
