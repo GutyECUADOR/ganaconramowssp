@@ -10,24 +10,21 @@ use App\Controllers\loginController;
     
 ?>
 
-    <div class="main-container background-confedi">
+    <div class="main-container background-confedi-gradient">
       <section class="space-sm">
         <div class="container align-self-start">
-          <div class="row">
-            <div class="col text-center">
-              
-            </div>
-            <!--end of col-->
-          </div>
-          <!--end of row-->
           <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-7">
-              <div class="card card-lg text-center">
+              <div class="card card-lg text-center border-0">
+                <div style="background: #266fbf;">
+                <img alt="Image" src="assets/img/logoconrayas.png" style="width: 40%;"/>
+                </div>
+
                 <div class="card-body">
                   <div class="mb-2">
-                    <img alt="Image" src="assets/img/logo.png" style="width: 40%;"/>
-                    <h1 class="h2 mb-2 mt-3">Hola de nuevo</h1>
-                    <span>Ingresa a tu cuenta y revisa tu acumulado</span>
+                    
+                    <h1 class="h2 mb-2 mt-2" style="font-weight: bold !important; color: #fe7011">¡HOLA!</h1>
+                    <span style="font-weight: bold !important; color: #fe7011">Ingresa a tu cuenta y revisa tus puntos</span>
                    
                   </div>
                   <div class="row no-gutters justify-content-center">
@@ -35,11 +32,11 @@ use App\Controllers\loginController;
                       <form method="POST" autocomplete="off">
                         <?php $login->actionCatcherController(); ?>
                         <div class="form-group">
-                          <label for="cedula">Documento de Identidad</label>
+                          <label for="cedula" style="color: #266fbf !important; font-weight: bold;">Documento de Identidad</label>
                           <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />
                         </div>
                         <div class="form-group">
-                          <label for="telefono">Teléfono Celular</label>
+                          <label for="telefono" style="color: #266fbf !important; font-weight: bold;">Teléfono Celular</label>
                           <input class="form-control form-control-lg" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" />
                          
                           </small>
@@ -55,7 +52,7 @@ use App\Controllers\loginController;
                             <span class="fa fa-google"></span> Ingresa con Google
                           </a>
                         </div>
-                        <div class="text-center mt-3">
+                        <div class="text-center mt-3 mb-3">
                             <span>¿No tienes una cuenta? <a href="?action=register">Crea una aqui</a>
                             </span>
                         </div>
