@@ -11,6 +11,18 @@
                 <span class="display-5 lead text-light mt-4" style="text-shadow: rgb(8, 0, 0) 3px 2px; font-size:2rem">
                     Al finalizar la promoción el 15 de marzo de 2021,  publicaremos en esta sección los resultados. </br></br> Consulta aquí si eres uno de los 1102 ganadores.
                 </span>
+
+                <div 
+                  class="flipper flipper-dark flipper-dark-labels" 
+                  data-datetime="2021-03-14 00:00:00"
+                  data-reverse="true" 
+                  data-template="d|H|i|s" 
+                  data-labels="Dias|Horas|Minutos|Segundos" 
+                  id="modalFlipper">
+                </div>
+
+                
+
                 
             </div>
             <!--end of col-->
@@ -35,13 +47,17 @@
       <script type="text/javascript" src="assets/js/jquery.min.js"></script>
       <script type="text/javascript" src="assets/js/popper.min.js"></script>
       <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.flipTimer.js"></script>
 
+     
       <script>
-        $(function () {
+        $(document).ready(function() {
+        
+          $('#modalFlipper').flipper('init');
+
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
-        })
-     
+        });
       </script>
     
       <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->

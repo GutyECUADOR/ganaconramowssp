@@ -23,6 +23,7 @@
       <link href="assets/css/entypo.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="assets/css/jquery.flipTimer.css" rel="stylesheet" type="text/css" media="all" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link href="assets/css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
       <!-- Google Tag Manager -->
