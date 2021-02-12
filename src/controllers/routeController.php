@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 use App\Models\routeModel;
 
-class routeController {
+class RouteController {
     
     public $mainmodel;
     

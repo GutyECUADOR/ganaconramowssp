@@ -6,7 +6,7 @@
 
     require_once './vendor/autoload.php';
     
-    $app = new routeController();
+    $app = new RouteController();
     $app->loadtemplate();
    
 

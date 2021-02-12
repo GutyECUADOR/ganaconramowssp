@@ -16,6 +16,6 @@
         "psr-4": {
             "App\\": "src/"
         },
-        "files": ["config/Global.php"]
+        "files": ["config/global.php"]
     }
 }
