@@ -82,11 +82,5 @@ class loginController  {
         $login->disconnect();
         return $userProfile;
     }
-
-    public function loginWithFacebook() {
-
-    }
-
-
     
 }

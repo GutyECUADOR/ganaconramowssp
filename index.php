@@ -1,13 +1,22 @@
 <?php namespace App\Controllers;
 
+    use Dotenv\Dotenv;
+    require_once './vendor/autoload.php';
+
     date_default_timezone_set('America/Lima');
     @ob_start();
     session_start();
 
-    require_once './vendor/autoload.php';
+    $dotenv = Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
+    $keyApp = getenv("FACEBOOK_APP_SECRET");
+    echo $keyApp;
+
     
     $app = new RouteController();
     $app->loadtemplate();
    
 
+    
     
