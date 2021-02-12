@@ -28,9 +28,23 @@ class loginModel extends conexion {
                 $resulset = false;
             }
 
+        return $resulset; 
+    }
+
+    public function getUserByEmail ($email) {
+        $query = "
+            SELECT * FROM `usuarios` WHERE email = :email
+        ";
+        $stmt = $this->instancia->prepare($query); 
+        $stmt->bindParam(':email', $email); 
+       
+            if($stmt->execute()){
+                $resulset = $stmt->fetch( \PDO::FETCH_ASSOC );
+            }else{
+                $resulset = false;
+            }
+
         return $resulset;
-           
-        
     }
 
     /* Retorna el nombre array con la clave NameDatabase y Codigo para el nombre de la instancia, para ser usada en la conexion*/ 

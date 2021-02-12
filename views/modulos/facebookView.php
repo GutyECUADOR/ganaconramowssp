@@ -7,7 +7,11 @@
       $login = new App\Controllers\loginController();
       $userProfile = $login->loginfacebook();
 
-      //$existinDB = $login->verifyUserByEmail($userProfile->email);
+      $usuario = (object) $login->getUserByEmail($userProfile->email);
+      if ($usuario) {
+        var_dump($usuario);
+        $login->checkLogin($usuario->cedula, $usuario->telefono);
+      }
 
     } catch (\Throwable $th) {
       header("location: index.php?action=inicio'");  

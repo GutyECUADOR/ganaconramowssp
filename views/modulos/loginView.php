@@ -7,7 +7,8 @@ use App\Controllers\loginController;
     }
     
     $login = new loginController();
-    
+    $cedula = $_POST["cedula"];
+    $telefono = $_POST["telefono"];
 ?>
 
     <div class="main-container background-confedi-gradient">
@@ -30,7 +31,10 @@ use App\Controllers\loginController;
                   <div class="row no-gutters justify-content-center">
                     <div class="text-left col-lg-8">
                       <form method="POST" autocomplete="off">
-                        <?php $login->actionCatcherController(); ?>
+                        <?php 
+                          $login->checkLogin($cedula, $telefono); 
+                        
+                        ?>
                         <div class="form-group">
                           <label for="cedula" style="color: #266fbf !important; font-weight: bold;">Documento de Identidad</label>
                           <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />

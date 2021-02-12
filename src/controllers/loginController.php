@@ -11,9 +11,9 @@ class loginController  {
         $this->loginModel = new loginModel();
     }
 
-    public function actionCatcherController(){
-        if (isset($_POST['cedula']) && isset($_POST['telefono']) ) {
-                $arrayDatos = array("cedula"=>$_POST['cedula'],"telefono"=>$_POST['telefono']);
+    public function checkLogin($cedula, $telefono){
+        if (!empty($cedula) && !empty($telefono) ) {
+                $arrayDatos = array("cedula"=>$cedula,"telefono"=>$telefono);
                 $arrayResultados = $this->loginModel->validaIngreso($arrayDatos);
               
                     if (!empty($arrayResultados)) {
@@ -29,7 +29,7 @@ class loginController  {
                         header("Location: index.php?&action=dashboard");
                            
                     }else{
-                        
+                            session_destroy(); 
                         echo '
                             <div class="alert alert-danger text-center">
                                 No se ha podido ingresar con el usuario <strong>'.$arrayDatos['cedula'].' </strong>, reintente.
@@ -40,7 +40,6 @@ class loginController  {
         }
     }
 
-    /*Crea elementos HTML opcion button para ser listados en el select*/
     public function getAllDataBaseList(){
         $opciones = $this->loginModel->getAllDataBaseList();
 
@@ -50,6 +49,10 @@ class loginController  {
             echo "<option value='$codigo'>$texto</option>";
     
         }
+    }
+
+    public function getUserByEmail($email){
+        return $this->loginModel->getUserByEmail($email);
     }
 
     public function loginfacebook() {

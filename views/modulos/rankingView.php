@@ -8,8 +8,8 @@
           <div class="row justify-content-center text-center section-intro">
             <div class="col-12 col-md-9 col-lg-8">
               <img alt="Image" src="assets/img/logo.png" style="width: 65%;"/>
-                <span class="display-5 lead text-light mt-4" style="text-shadow: rgb(8, 0, 0) 3px 2px; font-size:2rem">
-                    Al finalizar la promoción el 15 de marzo de 2021,  publicaremos en esta sección los resultados. </br></br> Consulta aquí si eres uno de los 1102 ganadores.
+                <span class="display-5 lead text-light mt-4 text-uppercase" style="text-shadow: rgb(8, 0, 0) 3px 2px; font-size:2rem">
+                   Pronto conocerás si eres uno de </br> los que más puntos ha acumulado.
                 </span>
 
                 <div 
