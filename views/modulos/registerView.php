@@ -31,6 +31,10 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                       <input type="text" v-model="cliente.confcedula" class="form-control form-control-sm" id="confcedula" placeholder="Confirme su Documento de Identidad" pattern="[0-9]+" maxlength="13">
                     </div>
 
+                    <div class="mb-1">
+                      <span class="text-uppercase" style="font-weight: bold !important; color: #fe7011">Contacto</span>
+                    </div>
+
                     <div class="form-group">
                       <label for="telefono">Teléfono celular</label>
                       <input type="text" v-model="cliente.telefono" class="form-control form-control-sm" id="telefono" placeholder="Ingrese su numero de Teléfono" pattern="[0-9]+" maxlength="10">

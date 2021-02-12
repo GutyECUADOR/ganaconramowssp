@@ -1,5 +1,4 @@
 <?php
-
     if (isset($_SESSION["usuarioRUC"])){
         header('location:index.php?action=inicio');  
     }
@@ -8,8 +7,7 @@
       $userProfile = $login->loginfacebook();
 
       $usuario = (object) $login->getUserByEmail($userProfile->email);
-      if ($usuario) {
-        var_dump($usuario);
+      if (!empty($usuario->cedula) && !empty($usuario->telefono)) {
         $login->checkLogin($usuario->cedula, $usuario->telefono);
       }
 
