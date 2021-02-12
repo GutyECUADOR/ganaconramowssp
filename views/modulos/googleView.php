@@ -90,14 +90,6 @@
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <script>
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-          $("#whatspopover").popover("show");
-        })
-     
-    </script>
-
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
     <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
@@ -126,5 +118,5 @@
       <!-- VUE y Scripts de la pagina-->
     <script src="assets\js\vue.js"></script>
     <script src="assets\js\clases\cliente.js"></script>
-    <script src="assets\js\pages\registrogoogle.js"></script>
+    <script src="assets\js\pages\registrosocialnetworks.js"></script>
 

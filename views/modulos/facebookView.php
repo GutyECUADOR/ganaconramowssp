@@ -19,85 +19,79 @@
     
 ?>
 
-    <div class="main-container background-confedi">
-      <section class="space-sm">
-        <div class="container align-self-start">
-          <div class="row">
-            <div class="col text-center">
-            </div>
-            <!--end of col-->
-          </div>
-          <!--end of row-->
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-7">
-              <div class="card card-lg text-center">
-                <div class="card-body">
-                  <div class="mb-2">
-                    <img alt="Image" src="assets/img/logo.png" style="width: 40%;"/>
-                    <h1 class="h2 mb-2 mt-3">Casi listo :D !</h1>
-                    <span>Por favor completa los siguientes datos para finalizar tu registro</span>
-                   
-                  </div>
-                  <div class="row no-gutters justify-content-center">
-                    <div class="text-left col-lg-8">
-                      <form method="POST" autocomplete="off">
-                        <?php $login->loginWithFacebook() ?>
-                        <div class="form-group">
-                          <label for="cedula">Nombres</label>
-                          <input class="form-control form-control-lg" type="text" name="nombres" id="nombres" value="<?php echo $userProfile->displayName?>"/>
-                        </div>
-                        <div class="form-group">
-                          <label for="cedula">Email</label>
-                          <input class="form-control form-control-lg" type="text" name="nombres" id="nombres" value="<?php echo $userProfile->email?>"/>
-                        </div>
-                        <div class="form-group">
-                          <label for="cedula">Documento de Identidad</label>
-                          <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />
-                        </div>
-                        <div class="form-group">
-                          <label for="telefono">Teléfono Celular</label>
-                          <input class="form-control form-control-lg" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" />
-                         
-                          </small>
-                        </div>
-                        <div class="text-center mt-3">
-                          <button type="submit" class="btn btn-primary btn-block">Finalizar Registro</button>
-                        </div>
-                        
-                      </form>
+      <div class="main-container background-confedi" id="app">
+          <section class="space-sm">
+            <div class="container align-self-start">
+              <div class="row">
+                    <div class="col text-center">
+                    </div>
+                    <!--end of col-->
+              </div>
+              <!--end of row-->
+              <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-7">
+                    <div class="card card-lg text-center">
+                    <div class="card-body">
+                          <div class="mb-2">
+                          <img alt="Image" src="assets/img/logo.png" style="width: 40%;"/>
+                          <h1 class="h2 mb-2 mt-3">Casi listo :D !</h1>
+                          <span>Por favor completa los siguientes datos para finalizar tu registro</span>
+                          
+                          </div>
+                          <div class="row no-gutters justify-content-center">
+                          <div class="text-left col-lg-8">
+                          <form method="POST" autocomplete="off">
+                                <?php $login->loginWithFacebook() ?>
+                                <div class="form-group">
+                                <label for="cedula">Nombres</label>
+                                      <input class="form-control form-control-lg text-uppercase" v-model="cliente.nombres" type="text" name="nombres" id="nombres"/>
+                                      <input class="form-control form-control-lg" type="hidden" name="nombres" id="nombres_hidden" value="<?php echo $userProfile->displayName?>"/>
+                                </div>
+                                <div class="form-group">
+                                      <label for="cedula">Email</label>
+                                      <input class="form-control form-control-lg" v-model="cliente.email" type="text" name="email" id="email" value=""/>
+                                      <input class="form-control form-control-lg" type="hidden" name="email" id="email_hidden" value="<?php echo $userProfile->email?>"/>
+                                </div>
+                                <div class="form-group">
+                                      <label for="cedula">Documento de Identidad</label>
+                                      <input class="form-control form-control-lg" v-model="cliente.cedula" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />
+                                </div>
+                                <div class="form-group">
+                                      <label for="telefono">Teléfono Celular</label>
+                                      <input class="form-control form-control-lg" v-model="cliente.telefono" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" />
+                                
+                                </small>
+                                </div>
+                                <div class="text-center mt-3">
+                                <button type="button" @click="addNewCliente()" class="btn btn-primary btn-block">Finalizar Registro</button>
+                                </div>
+                                
+                          </form>
+                          </div>
+                          
+                          </div>
+                          <!--end of row-->
+                    </div>
                     </div>
                     
-                  </div>
-                  <!--end of row-->
-                </div>
+                    </div>
+                    <!--end of col-->
               </div>
-              
-            </div>
-            <!--end of col-->
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </section>
-      <!--end of section-->
-      
-       <!-- Whatsapp button  -->
-      <?php require_once 'modals/whatsapp.php'?>
+              <!--end of row-->
+              </div>
+          <!--end of container-->
+          </section>
+          <!--end of section-->
+          
+          <!-- Whatsapp button  -->
+          <?php require_once 'modals/whatsapp.php'?>
 
-    </div>
+      </div>
 
     <!-- Required vendor scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-    <script>
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-          $("#whatspopover").popover("show");
-        })
-     
-    </script>
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
@@ -123,5 +117,9 @@
 
     <!-- Required theme scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/theme.js"></script>
+
+    <script src="assets\js\vue.js"></script>
+    <script src="assets\js\clases\cliente.js"></script>
+    <script src="assets\js\pages\registrosocialnetworks.js"></script>
 
       
