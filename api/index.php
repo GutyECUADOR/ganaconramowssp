@@ -10,15 +10,7 @@ if(!isset($_SESSION))
     session_start(); 
 } 
 
-
-require_once '../config/global.php';
-require_once '../src/models/conexion.php';
-require_once '../src/controllers/routeController.php';
-require_once '../src/models/routeModel.php';
-require_once '../src/controllers/loginController.php';
-require_once '../src/models/loginModel.php';
-require_once '../src/controllers/ajaxController.php';
-require_once '../src/models/ajaxModel.php';
+require_once '../vendor/autoload.php';
 
 class ajax{
   private $ajaxController;

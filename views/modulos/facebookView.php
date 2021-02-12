@@ -41,7 +41,6 @@
                           <div class="row no-gutters justify-content-center">
                           <div class="text-left col-lg-8">
                           <form method="POST" autocomplete="off">
-                                <?php $login->loginWithFacebook() ?>
                                 <div class="form-group">
                                 <label for="cedula">Nombres</label>
                                       <input class="form-control form-control-lg text-uppercase" v-model="cliente.nombres" type="text" name="nombres" id="nombres"/>
