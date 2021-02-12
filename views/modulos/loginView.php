@@ -7,8 +7,8 @@ use App\Controllers\loginController;
     }
     
     $login = new loginController();
-    $cedula = $_POST["cedula"];
-    $telefono = $_POST["telefono"];
+    $cedula = isset($_POST["cedula"]) ? $_POST["cedula"] : '';
+    $telefono = isset($_POST["telefono"]) ? $_POST["telefono"] : '';
 ?>
 
     <div class="main-container background-confedi-gradient">
@@ -37,11 +37,11 @@ use App\Controllers\loginController;
                         ?>
                         <div class="form-group">
                           <label for="cedula" style="color: #266fbf !important; font-weight: bold;">Documento de Identidad</label>
-                          <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" />
+                          <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" required />
                         </div>
                         <div class="form-group">
                           <label for="telefono" style="color: #266fbf !important; font-weight: bold;">Teléfono Celular</label>
-                          <input class="form-control form-control-lg" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" />
+                          <input class="form-control form-control-lg" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" required/>
                          
                           </small>
                         </div>
