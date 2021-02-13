@@ -97,9 +97,9 @@
                 <span class="text-left text-uppercase text-dark " style="font-weight: bold">
                   Son
                 </span>
-                <h2 class="h2 mb-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">7 CONSOLAS</h2>
+                <h2 class="h2 mb-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">BONOS DIGITALES</h2>
                 <span class="container mb-3 lead text-center text-uppercase text-dark">
-                  Para las personas que más acumulen puntos.
+                  Por un valor de $35.000 pesos para disfrutar
                 </span>
               </div>
           </div>

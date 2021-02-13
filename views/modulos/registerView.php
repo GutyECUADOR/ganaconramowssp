@@ -209,7 +209,7 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                   </div>
                   
                 </div>
-                <a class="btn btn-block text-uppercase" href="#" target="_blank" style="background-color: #ffd025; font-weight: bold">Descargar</a> 
+                <a class="btn btn-block text-uppercase" href="assets/docs/Terminos&condiciones.pdf" target="_blank" style="background-color: #ffd025; font-weight: bold">Descargar</a> 
               </div>
             </div>
             <!--end of col-->
