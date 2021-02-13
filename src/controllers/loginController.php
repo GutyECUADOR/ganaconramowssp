@@ -58,8 +58,8 @@ class loginController  {
     public function loginfacebook() {
         
         $config = [
-            'callback' => 'http://localhost/ganaconramowssp/?action=loginfacebook', // or Hybridauth\HttpClient\Util::getCurrentUrl()
-            'keys' => ['id' => '240255507681030', 'secret' => '2720cc87b649274edb2e0459075bf3ca'], // Your application credentials
+            'callback' => $_ENV['FACEBOOK_CALLBACK'], 
+            'keys' => ['id' => $_ENV['FACEBOOK_APP_ID'], 'secret' => $_ENV['FACEBOOK_APP_SECRET']], // Your application credentials
         ];
 
         $login = new \Hybridauth\Provider\Facebook($config);
@@ -72,8 +72,8 @@ class loginController  {
     public function logingoogle() {
         
         $config = [
-            'callback' => 'http://localhost/ganaconramowssp/?action=logingoogle', // or Hybridauth\HttpClient\Util::getCurrentUrl()
-            'keys' => ['id' => '9864280064-d278tg8ih4tpcbjglc0fcpa8nvt19avf.apps.googleusercontent.com', 'secret' => 'xHsSBRUnNVbS83oAaMVNt3NZ'], // Your application credentials
+            'callback' => $_ENV['GOOGLE_CALLBACK'],
+            'keys' => ['id' => $_ENV['GOOGLE_APP_ID'], 'secret' => $_ENV['GOOGLE_APP_SECRET']], // Your application credentials
         ];
 
         $login = new \Hybridauth\Provider\Google($config);

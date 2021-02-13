@@ -10,13 +10,7 @@
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 
-    $keyApp = getenv("FACEBOOK_APP_SECRET");
-    echo $keyApp;
-
-    
     $app = new RouteController();
     $app->loadtemplate();
    
-
-    
     
