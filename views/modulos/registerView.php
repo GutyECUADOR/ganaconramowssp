@@ -69,8 +69,8 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                   
                 </div>
                
-                <div class="card card-sm shadow text-justify" style="height: 80%;">
-                  <div class="card-body p-4 terms-box">
+                <div class="card card-sm shadow text-justify border-0" style="height: 80%;">
+                  <div class="card-body p-4 terms-box" style="color: white;background: #01548a;">
                   <p class="text-justify">
               
                   <p>Desde el quince (15) de Febrero - hasta el quince (15) de marzo del 2021 PRODUCTOS RAMO S.A.S. (en adelante &ldquo;Ramo&rdquo;), realizar&aacute; la actividad promocional que se describe a continuaci&oacute;n denominada:<br /> <strong>&ldquo;La diversi&oacute;n no llega sola. Gana con Ramo&rdquo; (en adelante &ldquo;La Actividad&rdquo;)</strong></p>

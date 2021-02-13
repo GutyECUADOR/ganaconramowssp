@@ -14,11 +14,17 @@
                     <div>
                         <a href="?action=login" class="btn btn-primary" style="background-color: #f2ce3e; color:black;"><i class="icon-login"></i> Ingresar</a>
                         <a href="?action=register" class="btn btn-primary" style="background-color: #f2ce3e; color:black;">Registrarme</a>
+                    </div>
 
                     </div>
-                    </div>
                     <!--end of col-->
+                    <div class="col-lg-8 mb-3 offset-lg-4 text-right">
+                      <small class="text-white mt-3">Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095</br> bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                    
+                    </div>
+                    
                 </div>
+                
                 <!--end of row-->
             </div>
             <!--end of container-->
