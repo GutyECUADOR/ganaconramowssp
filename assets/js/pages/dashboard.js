@@ -20,11 +20,15 @@ const app = new Vue({
             }).catch(function(error) {
                 console.error(error);
             });  
-        },
+        },jqueryInit(){
+            $('[data-toggle="popover"]').popover()
+            $("#whatspopover").popover("show");
+        }
        
     },
     mounted(){
         this.getPuntosByCliente();
+        this.jqueryInit();
     },
     filters: {
         checkPuntos: function (value) {

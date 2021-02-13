@@ -8,7 +8,7 @@ if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] != '99') {
    <!-- NavBar Admin -->
    <?php require_once 'sis_modules/navbar.php'?>
 
-    <div class="main-container" id="app">
+    <div class="main-container" id="app" style="background-color: white; height: 100vh;">
       <section>
         <div class="container">
           <div class="row justify-content-center align-items-center">
@@ -75,8 +75,7 @@ if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] != '99') {
         <!--end of container-->
       </section>
       <!--end of section-->
-      <!-- Footer -->
-      <?php require_once 'sis_modules/footer.php'?>
+      
       <!-- Modal Puntos -->
       <?php require_once 'modals/modalPuntos.php'?>
       <!-- Modal Terminos -->

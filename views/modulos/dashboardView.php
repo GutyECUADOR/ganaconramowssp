@@ -20,23 +20,26 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Mi cuenta</a>
+                  <a href="index.php?action=dashboard" class="nav-link custom-link">Mi cuenta</a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Como participar</a>
+                  <a href="index.php?action=comoparticipar" class="nav-link custom-link">Como participar</a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Premios</a>
+                  <a href="index.php?action=premios" class="nav-link custom-link">Premios</a>
                 </li>
                 
               </ul>
 
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="documentation/index.html" class="nav-link">Ranking</a>
+                  <a href="index.php?action=ranking" class="nav-link custom-link">Ranking</a>
                 </li>
                 <li class="nav-item">
-                  <a href="documentation/index.html" class="nav-link">Terminos y condiciones</a>
+                  <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link custom-link">Términos & Condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.php?action=logout" class="nav-link custom-link">Cerrar Sesión</a>
                 </li>
               </ul>
 
@@ -55,12 +58,15 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
                    
                     <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
-                    <span class="h5 mt-2">Mi cuenta</span>
-                    <span class="h5 mt-2">Cómo participar</span>
-                    <span class="h5 mt-2">Premios</span>
-                    <span class="h5 mt-2">Términos y Condiciones</span>
-                    <span class="h5 mt-2"><a style="font-size:1.3rem" href="index.php?action=logout">Cerrar Sesión</a></span>
+                    <span class="h5 mt-2">
+                      <?php 
+                        if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
+                            echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
+                        }
+                        ?>
+                    </span>
                     
+                  
                   </div>
                   
                   <div>
@@ -76,29 +82,29 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                   <img alt="Image" src="assets/img/balanza.png" style="width: 100%;"/>
                 </div>
                
-                <div class="card border-0">
-                <div class="card-header card-header-borderless d-flex justify-content-between">
+                <div class="card border-0 terms-box">
+                <div class="card-header-borderless d-flex justify-content-between">
                   <h5>Mis transacciones</h5>
                 </div>
-                <div class="card-body">
+                <div class="">
                   <table class="table align-items-center">
                     <thead>
                       <tr>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Punto de Venta</th>
-                        <th scope="col">Factura</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Puntos</th>
+                        <th scope="col" style="font-size: 1rem">Fecha</th>
+                        <th scope="col" style="font-size: 1rem">Punto de Venta</th>
+                        <th scope="col" style="font-size: 1rem">Factura</th>
+                        <th scope="col" style="font-size: 1rem">Valor</th>
+                        <th scope="col" style="font-size: 1rem">Puntos</th>
                       </tr>
                     </thead>
                     <tbody>
 
                       <tr v-for="transaccion in transacciones" class="text-small">
-                        <td>{{ transaccion.fecha }}</td>
-                        <td>{{ transaccion.puntoVenta }}</td>
-                        <td>{{ transaccion.factura }}</td>
-                        <td>{{ transaccion.valor|nodecimal }}</td>
-                        <td>{{ transaccion.kilos|nodecimal }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.fecha }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.puntoVenta }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.factura }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.valor|nodecimal }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.kilos|nodecimal }}</td>
                       </tr>
 
                      
@@ -116,19 +122,15 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
       </section>
       <!--end of section-->
     </div>
+    <!-- Modal Terminos -->
+    <?php require_once 'modals/terminosModal.php'?>
+
+    <?php require_once 'modals/whatsapp.php'?>
 
     <!-- Required vendor scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-    <script>
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-          $("#whatspopover").popover("show");
-        })
-     
-    </script>
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 

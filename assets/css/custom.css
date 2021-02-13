@@ -58,6 +58,20 @@
   font-size: 0.7rem;
 }
 
+.custom-link {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.custom-link:hover, .nav-link:focus {
+  text-decoration: none; 
+  color: #e99a01;
+}
+
+.col {
+  font-size: 1.0rem;
+}
+
 
 .float{
 	position:fixed;
