@@ -1,41 +1,81 @@
 
-    <!-- Modal Producto -->
-    <?php require_once 'sis_modules/navbar.php'?>
-    
-    <div class="main-container background-confedi" id="app">
-      <section>
-        <div class="container text-light">
-          <div class="row justify-content-center text-center section-intro">
-            <div class="col-12 col-md-9 col-lg-8">
-              <img alt="Image" src="assets/img/logo.png" style="width: 65%;"/>
-                <span class="display-5 lead text-light mt-4 text-uppercase" style="text-shadow: rgb(8, 0, 0) 3px 2px; font-size:2rem">
-                   Pronto conocerás si eres uno de </br> los que más puntos ha acumulado.
-                </span>
-
-                <div 
-                  class="flipper" 
-                  data-datetime="2021-03-14 00:00:00"
-                  data-reverse="true" 
-                  data-template="d|H|i|s" 
-                  data-labels="Dias|Horas|Minutos|Segundos" 
-                  id="modalFlipper">
-                </div>
-
-                
-
-                
+    <div id="app" class="main-container background-confedi">
+      <section >
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <img alt="Image" src="assets/img/logo.png" style="width: 25%;"/>
             </div>
-            <!--end of col-->
           </div>
-          <!--end of row-->
 
-        </div>
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="icon-menu h4"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.php?action=dashboard" class="nav-link custom-link">Mi cuenta</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.php?action=comoparticipar" class="nav-link custom-link">Como participar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.php?action=premios" class="nav-link custom-link">Premios</a>
+                </li>
+                
+              </ul>
 
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.php?action=ranking" class="nav-link custom-link">Ranking</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link custom-link">Términos & Condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.php?action=logout" class="nav-link custom-link">Cerrar Sesión</a>
+                </li>
+              </ul>
+
+            </div>
+            <!--end nav collapse-->
+          </nav>
         
+          <section>
+            <div class="container text-light">
+              <div class="row justify-content-center text-center section-intro">
+                <div class="col-12 col-md-9 col-lg-8">
+                    <span class="display-5 lead mt-4 text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 2px; font-size:2rem; color: #feae00;">
+                      Pronto conocerás si eres uno de </br> los que más puntos ha acumulado.
+                    </span>
 
+                    <div 
+                      class="flipper" 
+                      data-datetime="2021-03-14 00:00:00"
+                      data-reverse="true" 
+                      data-template="d|H|i|s" 
+                      data-labels="Dias|Horas|Minutos|Segundos" 
+                      id="modalFlipper">
+                    </div>
+
+                    
+
+                    
+                </div>
+                <!--end of col-->
+              </div>
+              <!--end of row-->
+            </div>
+          </section>
+
+          <!--end of row-->
+        </div>
+        <!--end of container-->
       </section>
-
-
+      <!--end of section-->
+    </div>
+    
      <!-- Modal Producto -->
      <?php require_once 'modals/terminosModal.php'?>
 
@@ -82,4 +122,4 @@
 
       <!-- Required theme scripts (Do not remove) -->
       <script type="text/javascript" src="assets/js/theme.js"></script>
-    </div>
+    

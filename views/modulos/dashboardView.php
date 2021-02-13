@@ -79,7 +79,9 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
               <div>
                 <div class="text-center">
                   <h3 class="h3 text-left text-bold">Mis Puntos</h3>
-                  <img alt="Image" src="assets/img/balanza.png" style="width: 100%;"/>
+                  <div class="container-balanza">
+                       <h3 style="color: black!important; font-weight: 400;" class="display-4" data-aos="zoom-out" data-aos-delay="100">{{totalKilos}} puntos</h3>
+                  </div>
                 </div>
                
                 <div class="card border-0 terms-box">

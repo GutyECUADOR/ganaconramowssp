@@ -28,10 +28,13 @@
 }
 
 .container-balanza{
-    background-image: url("../img/balanzaDisplay.png");
-    background-size: 50%;
+    background-image: url("../img/balanza.png");
+    background-size: 85%;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 20px;
+    padding-left: 20%;
+    font-size: 2rem;
 }
 
 
@@ -61,9 +64,10 @@
 .custom-link {
   font-size: 1.5rem;
   color: white;
+  text-shadow: rgb(8 0 0) 1px 2px;
 }
 
-.custom-link:hover, .nav-link:focus {
+.custom-link:hover{
   text-decoration: none; 
   color: #e99a01;
 }
