@@ -7,6 +7,43 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     <div id="app" class="main-container background-confedi">
       <section >
         <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <img alt="Image" src="assets/img/logo.png" style="width: 25%;"/>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="icon-menu h4"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Mi cuenta</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Como participar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Premios</a>
+                </li>
+                
+              </ul>
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="documentation/index.html" class="nav-link">Ranking</a>
+                </li>
+                <li class="nav-item">
+                  <a href="documentation/index.html" class="nav-link">Terminos y condiciones</a>
+                </li>
+              </ul>
+
+            </div>
+            <!--end nav collapse-->
+          </nav>
+        
           <div class="row flex-md-row card card-lg border-0">
             <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
               <img alt="Image" src="assets/img/avatar-female-1.jpg" class="mb-3 avatar avatar-xlg" />
@@ -14,16 +51,16 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                 
                 <div class="media-body">
                   <div class="mb-3">
-                    <h1 class="h2 mb-2">MARÍA DANIELA CUERVO APARICIO</h1>
-                    <span class="text-muted">1032421643</span>
-
+                    <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
+                    <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
+                   
+                    <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
                     <span class="h5 mt-2">Mi cuenta</span>
                     <span class="h5 mt-2">Cómo participar</span>
                     <span class="h5 mt-2">Premios</span>
                     <span class="h5 mt-2">Términos y Condiciones</span>
                     <span class="h5 mt-2"><a style="font-size:1.3rem" href="index.php?action=logout">Cerrar Sesión</a></span>
                     
-                   
                   </div>
                   
                   <div>
@@ -36,7 +73,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
               <div>
                 <div class="text-center">
                   <h3 class="h3 text-left text-bold">Mis Puntos</h3>
-                  <img alt="Image" src="img/corazon.png" style="width: 40%;"/>
+                  <img alt="Image" src="assets/img/balanza.png" style="width: 100%;"/>
                 </div>
                
                 <div class="card border-0">
