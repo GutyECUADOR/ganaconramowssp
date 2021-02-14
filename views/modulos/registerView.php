@@ -67,7 +67,10 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
               </div>
             </div>
             <!--end of col-->
-            <div class="col-12 col-md-6 card-body" style="background-color: #01548a">
+            <div class="col-12 col-md-6 card-body pt-0" style="background-color: #01548a">
+              <div class="col-12 float-right pr-2">
+                <a href="?action=bienvenidos" class="float-right text-white" aria-hidden="true" style="font-size:2rem">&times;</a>
+              </div>
               <div style="height: 100%">
                 <div class="text-center">
                   <h3 class="h3 mb-2 text-uppercase" style="font-weight: bold !important; color: #ffd025">Términos &amp; Condiciones</h3>
