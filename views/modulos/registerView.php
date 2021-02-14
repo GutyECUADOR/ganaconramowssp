@@ -45,13 +45,21 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     </div>
 
                     <div class="form-group">
-                      <label style="color: #01548a !important" for="email">Email (Opcional)</label>
+                      <label style="color: #01548a !important" for="email">Correo Electrónico</label>
                       <input type="email" v-model="cliente.email" class="form-control form-control-sm" id="email" placeholder="Indique su email" maxlength="50">
                     </div>
-                    <div class="mb-3">
+                    <div class="">
                       <div class="custom-control custom-checkbox">
                         <input type="checkbox" v-model="cliente.terminos" class="custom-control-input" value="agree" name="agree-terms" id="check-agree">
                         <label class="custom-control-label text-justify small" for="check-agree">He leído y aceptado los Términos y condiciones, y autorizo el tratamiento de mis datos personales para participar en la Actividad promocional.</a>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" value="agree" name="recordar-datos" id="recordar-datos">
+                        <label class="custom-control-label text-justify small" for="recordar-datos">Recordar mis datos.</a>
                         </label>
                       </div>
                     </div>
