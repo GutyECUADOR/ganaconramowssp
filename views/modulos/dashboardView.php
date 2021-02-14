@@ -16,79 +16,101 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
           <!--navbar-->
           <?php require_once 'sis_modules/navbarnotop.php'?>
 
-          <div class="row flex-md-row card card-lg border-0">
-            <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
-              <div>
-                <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
-                <div class="media">
-                  
-                  <div class="media-body">
-                    <div class="mb-3">
-                      <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
-                      <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
+          <div class="row flex-md-row card card-lg border-0 mb-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
+                  <div>
+                    <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+                  <div class="media">
                     
-                      <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
-                      <span class="h5 mt-2">
-                        <?php 
-                          if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
-                              echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
-                          }
-                          ?>
-                      </span>
+                    <div class="media-body">
+                      <div class="mb-3">
+                        <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
+                        <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
                       
-                    
+                        <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
+                        <span class="h5 mt-2">
+                          <?php 
+                            if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
+                                echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
+                            }
+                            ?>
+                        </span>
+                        
+                      
+                      </div>
+                      
+                      <div>
+                      </div>
                     </div>
-                    
-                    <div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end of col-->
-            <div class="col-12 col-md-8 card-body">
-              <div>
-                <div class="text-center">
-                  <h3 class="h3 text-left text-bold">Mis Puntos</h3>
-                  <div class="container-balanza">
-                       <h3 style="color: #ffdc00 !important; font-weight: bold; font-size:2.5rem" class="display-4" data-aos="zoom-out" data-aos-delay="100">{{totalKilos}} PTS.</h3>
                   </div>
                 </div>
                
-                <div class="card border-0 terms-box">
-                <div class="card-header-borderless d-flex justify-content-between">
-                  <h5>Mis transacciones</h5>
+              </div>
+              <!--end of col-->
+              
+              <div class="col-12 col-md-8 card-body" style="padding-bottom:0%">
+                <div>
+                  <div class="text-center">
+                    <h3 class="h3 text-left text-bold">Mis Puntos</h3>
+                    <div class="container-balanza">
+                        <h3 style="color: #ffdc00 !important; font-weight: bold; font-size:2.5rem" class="display-4" data-aos="zoom-out" data-aos-delay="100">{{totalKilos}} PTS.</h3>
+                    </div>
+                  </div>
+                
+                  <div class="card border-0 terms-box">
+                  <div class="card-header-borderless d-flex justify-content-between">
+                    <h5>Mis transacciones</h5>
+                  </div>
+                  <div class="">
+                    <table class="table align-items-center">
+                      <thead>
+                        <tr>
+                          <th scope="col" style="font-size: 1rem">Fecha</th>
+                          <th scope="col" style="font-size: 1rem">Punto de Venta</th>
+                          <th scope="col" style="font-size: 1rem">Factura</th>
+                          <th scope="col" style="font-size: 1rem">Valor</th>
+                          <th scope="col" style="font-size: 1rem">Puntos</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr v-for="transaccion in transacciones" class="text-small">
+                          <td style="min-width: 100px;">{{ transaccion.fecha }}</td>
+                          <td style="min-width: 100px;">{{ transaccion.puntoVenta }}</td>
+                          <td style="min-width: 100px;">{{ transaccion.factura }}</td>
+                          <td style="min-width: 100px;">{{ transaccion.valor|nodecimal }}</td>
+                          <td style="min-width: 100px;">{{ transaccion.kilos|nodecimal }}</td>
+                        </tr>
+
+                      
+
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div class="">
-                  <table class="table align-items-center">
-                    <thead>
-                      <tr>
-                        <th scope="col" style="font-size: 1rem">Fecha</th>
-                        <th scope="col" style="font-size: 1rem">Punto de Venta</th>
-                        <th scope="col" style="font-size: 1rem">Factura</th>
-                        <th scope="col" style="font-size: 1rem">Valor</th>
-                        <th scope="col" style="font-size: 1rem">Puntos</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                      <tr v-for="transaccion in transacciones" class="text-small">
-                        <td style="min-width: 100px;">{{ transaccion.fecha }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.puntoVenta }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.factura }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.valor|nodecimal }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.kilos|nodecimal }}</td>
-                      </tr>
-
-                     
-
-                    </tbody>
-                  </table>
+              </div>
+              <!--end of col-->
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4 card-body text-center text-light" style="background:#f2ce3e; padding:10px">
+                <div class="col-12">
+                  <div class="container">
+                    <small class="text-dark">Por cada MIL PESOS COP $1,000.oo en compras entre el 15 de febrero - hasta el 15 de marzo de 2021 en Productos Ramo, el participante recibirá UN (1) punto,</small>
+                  
+                  </div>
                 </div>
               </div>
             </div>
-            <!--end of col-->
+              
           </div>
+
+          
+
+          
           <!--end of row-->
         </div>
         <!--end of container-->

@@ -10,7 +10,7 @@
       <!--navbar-->
       <?php require_once 'sis_modules/navbarnotop.php'?>
     
-      <div class="row flex-md-row card card-lg border-0">
+      <div class="row flex-md-row card card-lg border-0 mb-0">
         <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
             <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
             <div class="media">
@@ -31,6 +31,7 @@
             </div>
           </div>
         </div>
+        
         <!--end of col-->
         <div class="col-12 col-md-4">
           <div class="container">
