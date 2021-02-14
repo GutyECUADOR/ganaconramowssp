@@ -69,6 +69,10 @@
     <script type="text/javascript">
       $(window).on('load', function() {
           $('#modal-video').modal('show');
+
+          $("#modal-video").on('hidden.bs.modal', function (e) {
+            $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
+        });
       });
 </script>
     
