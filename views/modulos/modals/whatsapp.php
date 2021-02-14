@@ -3,7 +3,7 @@
     <i class="fa fa-whatsapp my-float"></i>
 </div>
 
-<div id="tiendaramopopover" class="float2"  data-container="body" data-toggle="popover" data-placement="left" data-content="CENTRO DE CONTACTO.">
+<div id="tiendaramopopover" class="float2"  data-container="body" data-toggle="popover" data-placement="left" data-content="COMPRA AQUI.">
     <a style="color: white;" href="https://tiendaramo.com/"  target="_blank">
     <i class="fa fa-shopping-cart my-float"></i>
 </div>

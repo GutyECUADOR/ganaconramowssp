@@ -58,6 +58,11 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     
                     <button @click="addNewCliente()" class="btn btn-primary btn-block">Ingresar</button>
                   </div>
+
+                  <div class="text-center mt-3 mb-3">
+                      <span>¿Ya tienes una cuenta? <a href="?action=login">Ingresa aquí</a>
+                      </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -270,6 +275,9 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
         <!--end of container-->
       </section>
       <!--end of section-->
+      <!-- Whatsapp button  -->
+      <?php require_once 'modals/whatsapp.php'?>
+
     </div>
 
     <!-- Required vendor scripts (Do not remove) -->
@@ -281,6 +289,7 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
         $(function () {
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
+          $("#tiendaramopopover").popover("show");
         })
      
     </script>

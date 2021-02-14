@@ -77,7 +77,7 @@ use App\Controllers\loginController;
       </section>
       <!--end of section-->
       
-       <!-- Whatsapp button  -->
+      <!-- Whatsapp button  -->
       <?php require_once 'modals/whatsapp.php'?>
 
     </div>
@@ -91,6 +91,7 @@ use App\Controllers\loginController;
         $(function () {
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
+          $("#tiendaramopopover").popover("show");
         })
      
     </script>
