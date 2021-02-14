@@ -18,6 +18,10 @@ use App\Controllers\loginController;
             <div class="col-12 col-md-8 col-lg-7">
               <div class="card card-lg text-center border-0">
                 <div style="background: #266fbf;">
+                  <div class="pr-2">
+                    <a href="?action=bienvenidos" class="float-right text-white" aria-hidden="true" style="font-size:2rem">&times;</a>
+                  </div>
+               
                 <img alt="Image" src="assets/img/logoconrayas.png" style="width: 40%;"/>
                 </div>
 
