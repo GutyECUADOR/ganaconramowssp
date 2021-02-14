@@ -8,7 +8,7 @@
             <a href="index.php?action=dashboard" class="nav-link custom-link">Mi cuenta</a>
         </li>
         <li class="nav-item">
-            <a href="index.php?action=comoparticipar" class="nav-link custom-link">Como participar</a>
+            <a href="index.php?action=comoparticipar" class="nav-link custom-link">Cómo participar</a>
         </li>
         <li class="nav-item">
             <a href="index.php?action=premios" class="nav-link custom-link">Premios</a>

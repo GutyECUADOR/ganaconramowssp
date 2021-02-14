@@ -38,7 +38,7 @@
                       <h2 class="h2 mt-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">SON MÁS DE MIL PREMIOS</h2>
                     </div>
                   <div class="row text-left">
-                      <p class="h6 p-2 text-uppercase" style="line-height: 20px; font-size: 1.2rem;">¿Cómo puedes pareticipar y ganar fabulosos premios?</h2>
+                      <p class="h6 p-2 text-uppercase" style="line-height: 20px; font-size: 1.2rem;">¿Cómo puedes participar y ganar fabulosos premios?</h2>
                       <img alt="Image" src="assets/img/premios.png" class="img-fluid rounded" style="display: block;margin-left: auto;margin-right: auto;" />  
                   </div>
                 
@@ -53,7 +53,7 @@
             </div>
             <div class="col-12">
               <div class="container">
-                <small>Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                <small style="margin-bottom: 15px;">Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
               
               </div>
             </div>
