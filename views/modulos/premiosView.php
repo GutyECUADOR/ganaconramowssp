@@ -10,8 +10,8 @@
       <!--navbar-->
       <?php require_once 'sis_modules/navbarnotop.php'?>
     
-      <div class="row flex-md-row card card-lg border-0 mb-0">
-        <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
+      <div class="row flex-md-row card border-0 mb-0" style="background:#fff0">
+        <div class="col-12 col-md-4 text-center text-light" style="background:#266fbf">
             <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
             <div class="media">
             <div class="media-body">
@@ -33,7 +33,8 @@
         </div>
         
         <!--end of col-->
-        <div class="col-12 col-md-4">
+        <!-- DIV PREMIOS -->
+        <div class="col-12 col-md-4" style="background:#fff">
           <div class="container">
               <div class="text-center">
                 <h2 class="h2 mb-3 mt-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">CONSOLAS </br>PLAY STATION 5</h2>
