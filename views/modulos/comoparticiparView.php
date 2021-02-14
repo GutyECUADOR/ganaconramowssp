@@ -61,46 +61,90 @@
           </div>
         </div>
         <!--end of col-->
-        <div class="col-12 col-md-3">
-          <div class="container">
-              <div class="text-left">
-                <h2 class="h2 mb-3 mt-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">SON MÁS DE </br> MIL PREMIOS</h2>
-              </div>
-            <div class="row text-left">
-                <img alt="Image" src="assets/img/premios.png" class="img-fluid rounded" style="display: block;margin-left: auto;margin-right: auto;" />  
-            </div>
-           
-          </div>
-        </div>
-        <div class="col-12 col-md-5">
-          <div class="container">
-            <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%">
-                        <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/cKG3BZgn4oY"></iframe>
+        <div class="col-12 col-md-8">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="text-left">
+                      <h2 class="h2 mt-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">SON MÁS DE MIL PREMIOS</h2>
                     </div>
-           
-          </div>
+                  <div class="row text-left">
+                      <p class="h6 p-2 text-uppercase" style="line-height: 1.4rem">¿Cómo puedes pareticipar y ganar fabulosos premios?</h2>
+                      <img alt="Image" src="assets/img/premios.png" class="img-fluid rounded" style="display: block;margin-left: auto;margin-right: auto;" />  
+                  </div>
+                
+                </div>
+                <div class="col-12 col-md-8">
+                  <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%">
+                    <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/cKG3BZgn4oY"></iframe>
+                </div>
+              </div>
+              
+            </div>
+            </div>
+            <div class="col-12">
+              <div class="container">
+                <small>Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+              
+              </div>
+            </div>
+
         </div>
+
         <!--end of col-->
         
         <!-- col celeste-->
         <div class="container col-12 card-body text-center text-light" style="background:#50c2f6">
           <div class="row">
-            <div class="col-4">
-              <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">1. Guarda tus facturas</h4>
-              <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de febrero y el 15 de marzo.</p>
+            <div class="col-4 p-0">
+              <div class="mycontainer">
+                <div class="row">
+                    <div class="col-1">
+                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">1</spam>
+                </div>
+                <div class="col">
+                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Guarda tus facturas</h4>
+                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de febrero y el 15 de marzo.</p>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-              <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;"; margin-bottom: 1px!important;>2. Tómale una foto </h4>
-              <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">a la factura y envíala por WhatsApp al 322 354 2797.</p>
+              
+              
             </div>
-            <div class="col-4">
-              <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">3. Acumula el mayor número</h4>
-              <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de puntos ,por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
+            <div class="col-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
+              <div class="mycontainer">
+                <div class="row">
+                    <div class="col-1">
+                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">2</spam>
+                </div>
+                <div class="col">
+                  <h4 class="h4 text-left" style="line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">Tómale una foto a la factura</h4>
+                  <p class="text-left" style="color:#266fbf; font-size: 1.2rem; line-height: 20px;">y envíala por WhatsApp al 322 354 2797</p>
+                </div>
+              </div>
             </div>
+            
           </div>
           
         
+            <div class="col-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
+              <div class="mycontainer">
+                <div class="row">
+                    <div class="col-1">
+                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">3</spam>
+                </div>
+                <div class="col">
+                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Acumula el mayor número</h4>
+                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de puntos, por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
+      </div>
+
       </div>
       
       <!--end of row-->

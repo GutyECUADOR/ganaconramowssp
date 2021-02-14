@@ -49,27 +49,29 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
         
           <div class="row flex-md-row card card-lg border-0">
             <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
-              <img alt="Image" src="assets/img/avatar-female-1.jpg" class="mb-3 avatar avatar-xlg" />
-              <div class="media">
-                
-                <div class="media-body">
-                  <div class="mb-3">
-                    <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
-                    <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
-                   
-                    <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
-                    <span class="h5 mt-2">
-                      <?php 
-                        if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
-                            echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
-                        }
-                        ?>
-                    </span>
+              <div>
+                <img alt="Image" src="assets/img/avatar-female-1.jpg" class="mb-3 avatar avatar-xlg" />
+                <div class="media">
+                  
+                  <div class="media-body">
+                    <div class="mb-3">
+                      <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
+                      <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
                     
-                  
-                  </div>
-                  
-                  <div>
+                      <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
+                      <span class="h5 mt-2">
+                        <?php 
+                          if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
+                              echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
+                          }
+                          ?>
+                      </span>
+                      
+                    
+                    </div>
+                    
+                    <div>
+                    </div>
                   </div>
                 </div>
               </div>
