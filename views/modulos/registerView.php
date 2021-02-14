@@ -56,14 +56,6 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                       </div>
                     </div>
 
-                    <div class="mb-3">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" value="agree" name="recordar-datos" id="recordar-datos">
-                        <label class="custom-control-label text-justify small" for="recordar-datos">Recordar mis datos.</a>
-                        </label>
-                      </div>
-                    </div>
-                    
                     <button @click="addNewCliente()" class="btn btn-primary btn-block">Ingresar</button>
                   </div>
 

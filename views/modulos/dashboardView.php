@@ -21,7 +21,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
               <div class="container">
                 <div class="row" style="min-height: 300px;">
                   <div class="container mt-4">
-                    <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+                    <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-lg" />
                       <div class="media">
                       <div class="media-body">
                         <div class="mb-3">
@@ -81,7 +81,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                         <th scope="col" style="font-size: 1rem">Punto de Venta</th>
                         <th scope="col" style="font-size: 1rem">Factura</th>
                         <th scope="col" style="font-size: 1rem">Valor</th>
-                        <th scope="col" style="font-size: 1rem">Puntos</th>
+                        <th scope="col" style="font-size: 1rem">Cantidad</th>
                       </tr>
                     </thead>
                     <tbody>

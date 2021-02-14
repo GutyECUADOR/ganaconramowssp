@@ -2,7 +2,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="icon-menu h4"></i>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center text-uppercase" id="navbarNav">
         <ul class="navbar-nav">
         <li class="nav-item">
             <a href="index.php?action=dashboard" class="nav-link custom-link">Mi cuenta</a>

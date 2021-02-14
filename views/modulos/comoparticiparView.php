@@ -76,7 +76,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     <spam style="font-family: FuturaStdExtraBoldOblique; font-size: 3rem; color:#266fbf;">1</spam>
                 </div>
                 <div class="col" style="padding-left: 30px;">
-                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Guarda tus facturas</h4>
+                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Guarda las facturas</h4>
                   <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de febrero y el 15 de marzo.</p>
                 </div>
               </div>
@@ -108,7 +108,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                 </div>
                 <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">Acumula el mayor número</h4>
-                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de puntos, por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
+                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;"><spam style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">de puntos,</spam> por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
                 </div>
               </div>
             </div>
