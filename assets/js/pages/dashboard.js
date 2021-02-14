@@ -23,6 +23,7 @@ const app = new Vue({
         },jqueryInit(){
             $('[data-toggle="popover"]').popover()
             $("#whatspopover").popover("show");
+            $("#tiendaramopopover").popover("show");
         }
        
     },

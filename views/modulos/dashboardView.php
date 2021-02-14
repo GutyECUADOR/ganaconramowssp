@@ -7,11 +7,9 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     <div id="app" class="main-container background-confedi">
       <section >
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <img alt="Image" src="assets/img/logo.png" style="width: 25%;"/>
-            </div>
-          </div>
+          
+          <!--navbar-->
+          <?php require_once 'sis_modules/header_main.php'?>
 
           <!--navbar-->
           <?php require_once 'sis_modules/navbarnotop.php'?>
@@ -90,8 +88,8 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                         <td style="min-width: 100px;">{{ transaccion.fecha }}</td>
                         <td style="min-width: 100px;">{{ transaccion.puntoVenta }}</td>
                         <td style="min-width: 100px;">{{ transaccion.factura }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.valor|nodecimal }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.kilos|nodecimal }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.valor }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.kilos }}</td>
                       </tr>
 
                     

@@ -7,11 +7,8 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     <div id="app" class="main-container background-confedi">
       <section >
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <img alt="Image" src="assets/img/logo.png" style="width: 25%;"/>
-            </div>
-          </div>
+          <!--navbar-->
+          <?php require_once 'sis_modules/header_main.php'?>
 
           <!--navbar-->
           <?php require_once 'sis_modules/navbarnotop.php'?>
@@ -71,6 +68,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
 
           $('[data-toggle="popover"]').popover()
           $("#whatspopover").popover("show");
+          $("#tiendaramopopover").popover("show");
         });
       </script>
     
