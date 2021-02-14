@@ -9,7 +9,7 @@
                 <!--end of col-->
                 <div class="col-12 col-lg-5 mb-4 text-center text-md-right">
                     <h1 class="text-light text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 1px; color: #feb221 !important; font-size:4rem">¡Bienvenido!</h1>
-                    <h2 class="lead text-light" style="text-shadow: rgb(8, 0, 0) 1px 1px;">Envia tus facturas por compras de Ramo realizadas, <spam style="color:#ffeb00;">entre el 15 de febrero y el 15 de marzo al WhatsApp +3223542797</spam> Y acumula puntos para llevarte fabulosos premios.</h2>
+                    <h2 class="lead text-light" style="text-shadow: rgb(8, 0, 0) 1px 1px;">Envia tus facturas por compras de Ramo realizadas, <spam style="color:#ffeb00;">entre el 15 de febrero y el 15 de marzo al WhatsApp 3223542797</spam> Y acumula puntos para llevarte consolas o bonos.</h2>
             
                 <div>
                     <a href="?action=login" class="btn btn-primary" style="background-color: #f2ce3e; color:black;"><i class="icon-login"></i> Ingresar</a>
