@@ -18,7 +18,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     
       <div class="row flex-md-row card card-lg border-0">
         <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
-            <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+            <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-lg" />
             <div class="media">
             <div class="media-body">
               <div class="mb-3">
