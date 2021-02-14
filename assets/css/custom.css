@@ -76,6 +76,11 @@
   color: #e99a01;
 }
 
+.active{
+  text-decoration: none; 
+  color: #e99a01;
+}
+
 .col {
   font-size: 1.0rem;
 }
