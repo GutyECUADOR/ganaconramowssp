@@ -14,8 +14,8 @@
     
       <div class="row flex-md-row card card-lg border-0">
         <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
-          <img alt="Image" src="https://ui-avatars.com/api/?name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
-          <div class="media">
+            <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+            <div class="media">
             <div class="media-body">
               <div class="mb-3">
                 <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
@@ -69,9 +69,9 @@
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
-                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">1</spam>
+                    <spam style="font-family: FuturaStdExtraBoldOblique; font-size: 3rem; color:#266fbf;">1</spam>
                 </div>
-                <div class="col">
+                <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Guarda tus facturas</h4>
                   <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de febrero y el 15 de marzo.</p>
                 </div>
@@ -84,9 +84,9 @@
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
-                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">2</spam>
+                    <spam style="font-family: FuturaStdExtraBoldOblique; font-size: 3rem; color:#266fbf;">2</spam>
                 </div>
-                <div class="col">
+                <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">Tómale una foto a la factura</h4>
                   <p class="text-left" style="color:#266fbf; font-size: 1.2rem; line-height: 20px;">y envíala por WhatsApp al 322 354 2797</p>
                 </div>
@@ -100,9 +100,9 @@
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
-                    <spam style="font-family: fantasy; font-size: 3rem; color:#266fbf;">3</spam>
+                    <spam style="font-family: FuturaStdExtraBoldOblique; font-size: 3rem; color:#266fbf;">3</spam>
                 </div>
-                <div class="col">
+                <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Acumula el mayor número</h4>
                   <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de puntos, por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
                 </div>
