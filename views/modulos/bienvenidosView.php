@@ -50,8 +50,8 @@
           </button>
         </div>
         <div class="">
-          <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%">
-            <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/cKG3BZgn4oY"></iframe>
+          <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%; border-radius: 5px;">
+            <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/cKG3BZgn4oY?autoplay=1&controls=1&mute=1"></iframe>
           </div>
         </div>
       </div>

@@ -2,10 +2,6 @@
 if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     header("Location:index.php?&action=login");  
  }   
-
-  $avatar = new LasseRafn\InitialAvatarGenerator\InitialAvatar();
-  $iniciales = $avatar->name('Jose Gutiérrez')->generate('png', 100);
- 
 ?> 
 
     <div id="app" class="main-container background-confedi">
@@ -17,44 +13,13 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
             </div>
           </div>
 
-          <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="icon-menu h4"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a href="index.php?action=dashboard" class="nav-link custom-link">Mi cuenta</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index.php?action=comoparticipar" class="nav-link custom-link">Como participar</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index.php?action=premios" class="nav-link custom-link">Premios</a>
-                </li>
-                
-              </ul>
+          <!--navbar-->
+          <?php require_once 'sis_modules/navbarnotop.php'?>
 
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a href="index.php?action=ranking" class="nav-link custom-link">Ranking</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" data-toggle="modal" data-target="#terminosModal" class="nav-link custom-link">Términos & Condiciones</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index.php?action=logout" class="nav-link custom-link">Cerrar Sesión</a>
-                </li>
-              </ul>
-
-            </div>
-            <!--end nav collapse-->
-          </nav>
-        
           <div class="row flex-md-row card card-lg border-0">
             <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
               <div>
-                <img alt="Image" src="https://ui-avatars.com/api/?name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+                <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
                 <div class="media">
                   
                   <div class="media-body">
