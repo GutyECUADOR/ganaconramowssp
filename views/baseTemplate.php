@@ -17,8 +17,7 @@
 
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="A robust suite of app and landing page templates by Medium Rare">
-      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500" rel="stylesheet">
+      <meta name="description" content="prepárate para la mega promo">
       <link href="assets/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/entypo.css" rel="stylesheet" type="text/css" media="all" />
       <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
