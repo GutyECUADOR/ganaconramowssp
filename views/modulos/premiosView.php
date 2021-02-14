@@ -1,3 +1,5 @@
+}
+
 <div id="app" class="main-container background-confedi">
   <section >
     <div class="container">
@@ -13,7 +15,7 @@
       <div class="row flex-md-row card border-0 mb-0" style="background:#fff0">
         <div class="col-12 col-md-4 text-center text-light" style="background:#266fbf">
             <div class="container">
-              <div class="row">
+              <div class="row" style="min-height: 300px;">
                 <div class="container mt-4">
                   <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
                     <div class="media">
@@ -36,7 +38,7 @@
                 </div>
                   
               </div>
-              <div class="row" style="position: absolute; bottom: 0;">
+              <div class="row" style="position: absolute; bottom: 0; width: 100%;">
                 <div class="col-12 card-body text-center text-dark" style="background: rgb(242, 206, 62); padding: 10px;">
                   <div class="col-12">
                     <div class="container">

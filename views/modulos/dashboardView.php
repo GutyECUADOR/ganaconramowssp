@@ -17,33 +17,50 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
           <?php require_once 'sis_modules/navbarnotop.php'?>
 
           <div class="row flex-md-row card card-lg border-0 mb-0">
-            <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
-                <div class="">
-                  <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
-                  <div class="media">
-                    <div class="media-body">
-                      <div class="mb-3">
-                        <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
-                        <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
-                      
-                        <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
-                        <span class="h5 mt-2">
-                          <?php 
-                            if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
-                                echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
-                            }
-                            ?>
-                        </span>
+            <div class="col-12 col-md-4 text-center text-light" style="background:#266fbf">
+              <div class="container">
+                <div class="row" style="min-height: 300px;">
+                  <div class="container mt-4">
+                    <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+                      <div class="media">
+                      <div class="media-body">
+                        <div class="mb-3">
+                          <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
+                          <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
+                          
+                          <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
+                          <span class="h5 mt-2">
+                          </span>
+                          
                         
-                      
+                        </div>
+                        
+                        <div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                    
                 </div>
+                <div class="row" style="position: absolute; bottom: 0; width: 100%;">
+                  <div class="col-12 card-body text-center text-dark" style="background: rgb(242, 206, 62); padding: 10px;">
+                    <div class="col-12">
+                      <div class="container">
+                        <div class="row">
+                          <small>Por cada MIL PESOS COP $1,000.oo en compras entre el 15 de febrero - hasta el 15 de marzo de 2021 en Productos Ramo, el participante recibirá UN (1) punto.</small>
+                        </div>
+                        
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+                
             </div>
             <!--end of col-->
               
-            <div class="col-12 col-md-8 card-body" style="padding-bottom:0%">
+            <div class="col-12 col-md-8 card-body">
               <div>
                 <div class="text-center">
                   <h3 class="h3 text-left text-bold">Mis Puntos</h3>

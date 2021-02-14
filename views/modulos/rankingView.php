@@ -1,3 +1,8 @@
+<?php
+if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
+    header("Location:index.php?&action=login");  
+ }   
+?> 
 
     <div id="app" class="main-container background-confedi">
       <section >
