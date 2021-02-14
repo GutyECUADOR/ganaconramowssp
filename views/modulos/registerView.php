@@ -18,16 +18,16 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                   <!--form-->
                   <div>
                     <div class="form-group">
-                      <label for="nombre">Nombre Completo</label>
+                      <label style="color: #01548a !important" for="nombre">Nombre Completo</label>
                       <input type="text" v-model="cliente.nombres" class="form-control form-control-sm text-uppercase" id="nombre" placeholder="Ingrese su nombre y apellido" maxlength="200">
                     </div>
                     
                     <div class="form-group">
-                      <label for="cedula">Documento de Identidad</label>
+                      <label style="color: #01548a !important" for="cedula">Documento de Identidad</label>
                       <input type="text" v-model="cliente.cedula" class="form-control form-control-sm" id="cedula" placeholder="Ingrese su numero de documento" pattern="[0-9]+" maxlength="13">
                     </div>
                     <div class="form-group">
-                      <label for="cedula">Confirmar Documento de Identidad</label>
+                      <label style="color: #01548a !important" for="cedula">Confirmar Documento de Identidad</label>
                       <input type="text" v-model="cliente.confcedula" class="form-control form-control-sm" id="confcedula" placeholder="Confirme su Documento de Identidad" pattern="[0-9]+" maxlength="13">
                     </div>
 
@@ -36,16 +36,16 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     </div>
 
                     <div class="form-group">
-                      <label for="telefono">Teléfono celular</label>
+                      <label style="color: #01548a !important" for="telefono">Teléfono celular</label>
                       <input type="text" v-model="cliente.telefono" class="form-control form-control-sm" id="telefono" placeholder="Ingrese su numero de Teléfono" pattern="[0-9]+" maxlength="10">
                     </div>
                     <div class="form-group">
-                      <label for="telefono">Confirmar Teléfono celular</label>
+                      <label style="color: #01548a !important" for="telefono">Confirmar Teléfono celular</label>
                       <input type="text" v-model="cliente.conftelefono" class="form-control form-control-sm" id="conftelefono" placeholder="Confirme su numero de Teléfono" pattern="[0-9]+" maxlength="10">
                     </div>
 
                     <div class="form-group">
-                      <label for="email">Email (Opcional)</label>
+                      <label style="color: #01548a !important" for="email">Email (Opcional)</label>
                       <input type="email" v-model="cliente.email" class="form-control form-control-sm" id="email" placeholder="Indique su email" maxlength="50">
                     </div>
                     <div class="mb-3">

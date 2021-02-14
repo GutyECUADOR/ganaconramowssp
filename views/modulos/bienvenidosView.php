@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row no-gutters height-100">
         <div class="container">
-            <div class="row justify-content-between align-items-center" style="margin-top:35%;">
+            <div class="row justify-content-between align-items-center" style="margin-top:40%;">
                 <div class="col-12 col-md-6 mb-8">
                 </div>
                 <!--end of col-->
                 <div class="col-12 col-lg-5 mb-4 text-center text-md-right">
-                    <h1 class="display-3 text-light" style="text-shadow: rgb(8, 0, 0) 2px 2px;">Bienvenido!</h1>
-                    <h2 class="lead text-light" style="text-shadow: rgb(8, 0, 0) 2px 2px;">Envia tus facturas por compras de Productos Ramo realizadas, <spam style="color:#ffeb00;">entre el 15 de febrero y el 15 de marzo al WhatsApp +3223542797</spam> Y acumula puntos para llevarte fabulosos premios.</h2>
+                    <h1 class="text-light text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 1px; color: #feb221 !important; font-size:4rem">¡Bienvenido!</h1>
+                    <h2 class="lead text-light" style="text-shadow: rgb(8, 0, 0) 1px 1px;">Envia tus facturas por compras de Productos Ramo realizadas, <spam style="color:#ffeb00;">entre el 15 de febrero y el 15 de marzo al WhatsApp +3223542797</spam> Y acumula puntos para llevarte fabulosos premios.</h2>
             
                 <div>
                     <a href="?action=login" class="btn btn-primary" style="background-color: #f2ce3e; color:black;"><i class="icon-login"></i> Ingresar</a>

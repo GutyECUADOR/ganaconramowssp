@@ -25,7 +25,7 @@ use App\Controllers\loginController;
                   <div class="mb-2">
                     
                     <h1 class="h2 mb-2 mt-2" style="font-weight: bold !important; color: #fe7011">¡HOLA!</h1>
-                    <span style="font-weight: bold !important; color: #fe7011">Ingresa a tu cuenta y revisa tus puntos</span>
+                    <span class="text-uppercase" style="font-weight: bold !important; color: #fe7011">Ingresa a tu cuenta y revisa tus puntos</span>
                    
                   </div>
                   <div class="row no-gutters justify-content-center">
@@ -36,11 +36,11 @@ use App\Controllers\loginController;
                         
                         ?>
                         <div class="form-group">
-                          <label for="cedula" style="color: #266fbf !important; font-weight: bold;">Documento de Identidad</label>
+                          <label for="cedula" style="color: #266fbf !important;">Documento de Identidad</label>
                           <input class="form-control form-control-lg" type="text" name="cedula" id="cedula" placeholder="Documento de Identidad" required />
                         </div>
                         <div class="form-group">
-                          <label for="telefono" style="color: #266fbf !important; font-weight: bold;">Teléfono Celular</label>
+                          <label for="telefono" style="color: #266fbf !important;">Teléfono Celular</label>
                           <input class="form-control form-control-lg" type="telefono" name="telefono" id="telefono" placeholder="Teléfono" required/>
                          
                           </small>
