@@ -15,8 +15,8 @@
             <div class="container text-light">
               <div class="row justify-content-center text-center section-intro">
                 <div class="col-12 col-md-9 col-lg-8">
-                    <span class="display-5 lead mt-4 text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 2px; font-size:2rem; color: #feae00;">
-                      Pronto conocerás si eres uno de </br> los que más puntos ha acumulado.
+                    <span class="display-5 lead mt-4 text-uppercase" style="text-shadow: rgb(8, 0, 0) 0px 1px; font-size:2rem; color: #ffd987;">
+                      Pronto conocerás si eres uno de </br> los que más puntos ha acumulado
                     </span>
 
                     <div 

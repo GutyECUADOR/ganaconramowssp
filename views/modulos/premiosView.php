@@ -12,24 +12,42 @@
     
       <div class="row flex-md-row card border-0 mb-0" style="background:#fff0">
         <div class="col-12 col-md-4 text-center text-light" style="background:#266fbf">
-            <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
-            <div class="media">
-            <div class="media-body">
-              <div class="mb-3">
-                <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
-                <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
-                
-                <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
-                <span class="h5 mt-2">
-                </span>
-                
-              
+            <div class="container">
+              <div class="row">
+                <div class="container mt-4">
+                  <img alt="Image" src="https://ui-avatars.com/api/?bold=true&color=266fbf&background=f2ce3e&name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
+                    <div class="media">
+                    <div class="media-body">
+                      <div class="mb-3">
+                        <h1 class="h2 mb-2"><?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY] ?></h1>
+                        <span class="text-muted"><?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?></span>
+                        
+                        <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
+                        <span class="h5 mt-2">
+                        </span>
+                        
+                      
+                      </div>
+                      
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
               </div>
-              
-              <div>
+              <div class="row" style="position: absolute; bottom: 0;">
+                <div class="col-12 card-body text-center text-dark" style="background: rgb(242, 206, 62); padding: 10px;">
+                  <div class="col-12">
+                    <div class="container">
+                    <small>Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
-          </div>
+
+            
         </div>
         
         <!--end of col-->

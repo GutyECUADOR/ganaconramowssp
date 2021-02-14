@@ -38,12 +38,12 @@
                       <h2 class="h2 mt-3" style="font-weight:bold; color:#266fbf; line-height: 2rem">SON MÁS DE MIL PREMIOS</h2>
                     </div>
                   <div class="row text-left">
-                      <p class="h6 p-2 text-uppercase" style="line-height: 1.4rem">¿Cómo puedes pareticipar y ganar fabulosos premios?</h2>
+                      <p class="h6 p-2 text-uppercase" style="line-height: 20px; font-size: 1.2rem;">¿Cómo puedes pareticipar y ganar fabulosos premios?</h2>
                       <img alt="Image" src="assets/img/premios.png" class="img-fluid rounded" style="display: block;margin-left: auto;margin-right: auto;" />  
                   </div>
                 
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 d-flex align-items-center">
                   <div class="embed-responsive embed-responsive-16by9 mb-3" style="border-width: 4px; margin-top:5%">
                     <iframe class="embed-responsive-item" style="border: 6px solid #CCCCCC" src="https://youtube.com/embed/cKG3BZgn4oY"></iframe>
                 </div>
@@ -65,7 +65,7 @@
         <!-- col celeste-->
         <div class="container col-12 card-body text-center text-light" style="background:#50c2f6">
           <div class="row">
-            <div class="col-4 p-0">
+            <div class="col-12 col-md-4 p-0">
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
@@ -80,7 +80,7 @@
               
               
             </div>
-            <div class="col-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
+            <div class="col-12 col-md-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">Tómale una foto a la factura</h4>
-                  <p class="text-left" style="color:#266fbf; font-size: 1.2rem; line-height: 20px;">y envíala por WhatsApp al 322 354 2797</p>
+                  <p class="text-left" style="color:#266fbf; font-size: 1.3rem; line-height: 23px; font-weight: bold;">y envíala por WhatsApp al 322 354 2797</p>
                 </div>
               </div>
             </div>
@@ -96,14 +96,14 @@
           </div>
           
         
-            <div class="col-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
+            <div class="col-12 col-md-4 p-0" style="padding-left: 15px !important;border-left: 2px solid #266fbf;">
               <div class="mycontainer">
                 <div class="row">
                     <div class="col-1">
                     <spam style="font-family: FuturaStdExtraBoldOblique; font-size: 3rem; color:#266fbf;">3</spam>
                 </div>
                 <div class="col" style="padding-left: 30px;">
-                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Acumula el mayor número</h4>
+                  <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important; font-size: 1.3rem;">Acumula el mayor número</h4>
                   <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de puntos, por cada mil pesos acumulas 1 punto, y podrás ganar fabulosos premios.</p>
                 </div>
               </div>
