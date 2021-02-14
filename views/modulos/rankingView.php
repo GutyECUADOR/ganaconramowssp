@@ -52,7 +52,7 @@
 
                     <div 
                       class="flipper" 
-                      data-datetime="2021-03-14 00:00:00"
+                      data-datetime="2021-03-16 00:00:00"
                       data-reverse="true" 
                       data-template="d|H|i|s" 
                       data-labels="Dias|Horas|Minutos|Segundos" 

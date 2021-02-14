@@ -2,6 +2,10 @@
 if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     header("Location:index.php?&action=login");  
  }   
+
+  $avatar = new LasseRafn\InitialAvatarGenerator\InitialAvatar();
+  $iniciales = $avatar->name('Jose Gutiérrez')->generate('png', 100);
+ 
 ?> 
 
     <div id="app" class="main-container background-confedi">
@@ -50,7 +54,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
           <div class="row flex-md-row card card-lg border-0">
             <div class="col-12 col-md-4 card-body text-center text-light" style="background:#266fbf">
               <div>
-                <img alt="Image" src="assets/img/avatar-female-1.jpg" class="mb-3 avatar avatar-xlg" />
+                <img alt="Image" src="https://ui-avatars.com/api/?name=<?php echo $_SESSION["usuario_nombres".APP_UNIQUE_KEY]?>" class="mb-3 avatar avatar-xlg" />
                 <div class="media">
                   
                   <div class="media-body">
