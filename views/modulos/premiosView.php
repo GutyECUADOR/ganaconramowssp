@@ -115,3 +115,11 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="popover"]').popover()
+    $("#whatspopover").popover("show");
+    $("#tiendaramopopover").popover("show");
+  });
+</script>
