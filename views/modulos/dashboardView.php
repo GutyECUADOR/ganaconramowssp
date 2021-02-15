@@ -28,6 +28,11 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                           
                           <input type="hidden" id="cedulaHidden" value="<?php echo $_SESSION["usuario_cedula".APP_UNIQUE_KEY] ?>"/>
                           <span class="h5 mt-2">
+                            <?php 
+                              if ($_SESSION["usuario_rol".APP_UNIQUE_KEY] == '99') {
+                                  echo '<a href="?action=puntos" style="font-size:1.3rem">Asignación de Puntos</a>';
+                              }
+                              ?>
                           </span>
                           
                         
@@ -45,7 +50,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                     <div class="col-12">
                       <div class="container">
                         <div class="row">
-                          <small>Por cada MIL PESOS COP $1,000.oo en compras entre el 15 de febrero - hasta el 15 de marzo de 2021 en Productos Ramo, el participante recibirá UN (1) punto.</small>
+                          <small>Por cada MIL PESOS COP $1,000.oo en compras entre el 15 de Febrero - hasta el 15 de Marzo de 2021 en Productos Ramo, el participante recibirá UN (1) punto.</small>
                         </div>
                         
                       </div>

@@ -55,7 +55,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
             </div>
             <div class="col-12">
               <div class="container">
-                <small style="margin-bottom: 15px;">Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                <small style="margin-bottom: 15px;">Promoción válida del 15 de Febrero al 15 de Marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
               
               </div>
             </div>
@@ -75,7 +75,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
                 </div>
                 <div class="col" style="padding-left: 30px;">
                   <h4 class="h4 text-left" style="font-weight:bold; color:#266fbf; line-height: 1.3rem; margin-bottom: 1px!important;">Guarda las facturas</h4>
-                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de febrero y el 15 de marzo.</p>
+                  <p class="text-left" style="font-size: 1.2rem; line-height: 20px;">de tus compras de productos Ramo, realizadas entre el 15 de Febrero y el 15 de Marzo.</p>
                 </div>
               </div>
             </div>
