@@ -80,9 +80,21 @@ const app = new Vue({
             .then(data => {
                 console.log(data)
                 if (data.status == 'success') {
-                    alert(data.mensaje);
+                    //alert(data.mensaje);
                     this.cliente = new Cliente();
-                    window.location = './index.php?action=login'
+
+                    Swal.fire({
+                        title: 'Listo!',
+                        text: data.mensaje,
+                        type: "success",
+                        confirmButtonText: `Aceptar`,
+                      }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location = './index.php?action=login'
+                        }
+                      })
+
+                   
                 }else{
                     alert(data.mensaje  + 'Si el problema persiste. Comuniquese a nuestro centro a atencion al cliente.');
                    

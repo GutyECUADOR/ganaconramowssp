@@ -319,6 +319,7 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     <script type="text/javascript" src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/zoom.min.js"></script>
     <script type="text/javascript" src="assets/js/moment.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script type="text/javascript" src="assets/js/jquery-modal-video.min.js"></script>
     <!-- Required theme scripts (Do not remove) -->

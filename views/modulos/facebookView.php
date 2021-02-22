@@ -113,6 +113,8 @@
     <!-- Prism (displays formatted code boxes) -->
     <script type="text/javascript" src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/zoom.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
     <!-- Required theme scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/theme.js"></script>
