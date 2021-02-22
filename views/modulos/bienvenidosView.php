@@ -1,3 +1,17 @@
+
+<div style="background-color: #e9092b">
+  <a href="https://tiendaramo.com/" target="_blank">
+    <marquee style="color:white; margin-top:10px; background-color:#e9092b" direction="left" width="100%" height="100%" loop="infinite">
+      <img src="assets/img/botontiendaramo.jpg" alt="Promo" style="max-height:20px">
+      !Haz clic aqui y sigue acumulando puntos!
+      
+      
+    </marquee>
+    
+  </a>
+  
+</div>
+
 <div class="main-container" style="background-image:  url('assets/img/bienvenidos.jpg'); background-size: cover; height: 100%;  background-position-x: 25%;">
   <section class="fullwidth-split" >
     <div class="container">
