@@ -91,7 +91,7 @@ if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
 
                       <tr v-for="transaccion in transacciones" class="text-small">
                         <td style="min-width: 100px;">{{ transaccion.fecha }}</td>
-                        <td style="min-width: 100px;">{{ transaccion.puntoVenta }}</td>
+                        <td style="min-width: 100px;">{{ transaccion.nombre }}</td>
                         <td style="min-width: 100px;">{{ transaccion.factura }}</td>
                         <td style="min-width: 100px;">{{ transaccion.valor }}</td>
                         <td style="min-width: 100px;">{{ transaccion.kilos }}</td>

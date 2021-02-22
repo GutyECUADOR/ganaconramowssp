@@ -109,7 +109,6 @@ class ajaxModel extends conexion  {
             SUM(pesos.kilos) as kilosTotal
         FROM usuarios 
             INNER JOIN pesos on pesos.cedula = usuarios.cedula
-        WHERE status = 1
         GROUP BY usuarios.nombres
         ORDER BY kilosTotal DESC
         "; 
@@ -159,15 +158,9 @@ class ajaxModel extends conexion  {
 
         $query = " 
         SELECT 
-            puntosventa.puntoVenta,
-            factura,
-            valor,
-            cedula,
-            fecha,
-            kilos
+            *
         FROM 
             pesos 
-            INNER JOIN puntosventa ON puntosventa.id = pesos.puntoVenta
         WHERE cedula = :cedula
         ORDER BY fecha DESC 
         
@@ -199,13 +192,14 @@ class ajaxModel extends conexion  {
 
             $query = " 
                 INSERT INTO 
-                    pesos (puntoVenta, factura, cedula, valor, kilos, fecha)
-                VALUES (:puntoVenta, :factura, :cedula, :valor, :kilos, :fecha)
+                    pesos (puntoVenta, nombre, factura, cedula, valor, kilos, fecha)
+                VALUES (:puntoVenta, :nombre, :factura, :cedula, :valor, :kilos, :fecha)
 
             ";  
 
             $stmt = $this->instancia->prepare($query); 
             $stmt->bindParam(':puntoVenta', $clientePuntos->puntoVenta);
+            $stmt->bindParam(':nombre', $clientePuntos->nombre);
             $stmt->bindParam(':factura', $clientePuntos->factura); 
             $stmt->bindParam(':cedula', $clientePuntos->cedula);
             $stmt->bindParam(':valor', $clientePuntos->valor); 

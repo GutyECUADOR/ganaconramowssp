@@ -9,14 +9,13 @@
       </div>
       <div class="modal-body">
         <form>
-        <div class="form-group">
-            <label for="ciudad">Punto de Venta</label>
-              <select v-model="clientePuntos.puntoVenta" class="form-control form-control-sm">
-                <option value="">Seleccione por favor</option>
-                  <option v-for="puntoVenta in puntosVenta" :value="puntoVenta.id">
-                    {{puntoVenta.NIT}} - {{puntoVenta.puntoVenta}}
-                  </option>
-              </select>
+          <div class="form-group">
+            <label for="factura" class="col-form-label">Punto Venta (NIT):</label>
+            <input type="text" v-model="clientePuntos.puntoVenta" class="form-control form-control-sm" id="factura">
+          </div>
+          <div class="form-group">
+            <label for="factura" class="col-form-label">Nombre:</label>
+            <input type="text" v-model="clientePuntos.nombre" class="form-control form-control-sm" id="factura">
           </div>
           <div class="form-group">
             <label for="factura" class="col-form-label">Número de factura:</label>

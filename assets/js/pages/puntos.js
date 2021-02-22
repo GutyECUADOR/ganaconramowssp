@@ -1,6 +1,7 @@
 class ClientePuntos {
     constructor() {
         this.puntoVenta = '';
+        this.nombre = '';
         this.factura = '';
         this.cedula = '';
         this.fecha = '';
@@ -48,7 +49,7 @@ const app = new Vue({
         },
         actualizarPuntos(){
             console.log(this.clientePuntos);
-            if (!this.clientePuntos.puntoVenta || !this.clientePuntos.cedula || !this.clientePuntos.fecha || !this.clientePuntos.valor || !this.clientePuntos.kilos ) {
+            if (!this.clientePuntos.puntoVenta || !this.clientePuntos.nombre ||  !this.clientePuntos.cedula || !this.clientePuntos.fecha || !this.clientePuntos.valor || !this.clientePuntos.kilos ) {
                 alert('Complete los datos de registro para agregar Kilos.');
                 return
             }
