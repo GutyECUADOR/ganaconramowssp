@@ -1,7 +1,9 @@
 <?php
 if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     header("Location:index.php?&action=dashboard");  
- }   
+ } 
+ 
+ require_once './views/modulos/sis_modules/promo_banner.php';
 ?> 
     
     <div class="main-container background-confedi-gradient" id="app" >
@@ -319,7 +321,8 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     <script type="text/javascript" src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/zoom.min.js"></script>
     <script type="text/javascript" src="assets/js/moment.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
 
     <script type="text/javascript" src="assets/js/jquery-modal-video.min.js"></script>
     <!-- Required theme scripts (Do not remove) -->
@@ -327,5 +330,5 @@ if (isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
 
     <!-- VUE y Scripts de la pagina-->
     <script src="assets\js\vue.js"></script>
-    <script src="assets\js\clases\cliente.js"></script>
-    <script src="assets\js\pages\registro.js"></script>
+    <script src="assets\js\clases\cliente.js?<?php echo date('Ymdhiiss')?>"></script>
+    <script src="assets\js\pages\registro.js?<?php echo date('Ymdhiiss')?>"></script>

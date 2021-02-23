@@ -59,16 +59,20 @@ const app = new Vue({
                 if (data.status == 'success') {
                     //alert(data.mensaje);
                     this.cliente = new Cliente();
-                    Swal.fire({
-                        title: 'Listo!',
+
+                    swal({
+                        title: "Listo!!!",
                         text: data.mensaje,
                         type: "success",
-                        confirmButtonText: `Aceptar`,
-                      }).then((result) => {
-                        if (result.isConfirmed) {
+                        showCancelButton: false,
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Aceptar",
+                        closeOnConfirm: false
+                        },
+                        function(){
                             window.location = './index.php?action=login'
-                        }
-                      })
+                        });
+
                 }else{
                     alert(data.mensaje  + 'Si el problema persiste. Comuniquese a nuestro centro a atencion al cliente.');
                    

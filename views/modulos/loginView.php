@@ -9,6 +9,8 @@ use App\Controllers\loginController;
     $login = new loginController();
     $cedula = isset($_POST["cedula"]) ? $_POST["cedula"] : '';
     $telefono = isset($_POST["telefono"]) ? $_POST["telefono"] : '';
+
+    require_once './views/modulos/sis_modules/promo_banner.php';
 ?>
 
     <div class="main-container background-confedi-gradient">
