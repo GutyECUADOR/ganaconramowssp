@@ -113,14 +113,13 @@
     <!-- Prism (displays formatted code boxes) -->
     <script type="text/javascript" src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/zoom.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
+    <script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
 
     <!-- Required theme scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/theme.js"></script>
 
     <script src="assets\js\vue.js"></script>
     <script src="assets\js\clases\cliente.js"></script>
-    <script src="assets\js\pages\registrosocialnetworks.js"></script>
+    <script src="assets\js\pages\registrosocialnetworks.js?<?php echo date('Ymdhiiss')?>"></script>
 
       

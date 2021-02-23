@@ -2,6 +2,8 @@
 if (!isset($_SESSION["usuario_cedula".APP_UNIQUE_KEY])){
     header("Location:index.php?&action=login");  
  }   
+
+ require_once './views/modulos/sis_modules/promo_banner.php';
 ?> 
 
     <div id="app" class="main-container background-confedi">

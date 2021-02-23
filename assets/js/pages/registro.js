@@ -83,16 +83,18 @@ const app = new Vue({
                     //alert(data.mensaje);
                     this.cliente = new Cliente();
 
-                    Swal.fire({
-                        title: 'Listo!',
-                        text: data.mensaje,
-                        type: "success",
-                        confirmButtonText: `Aceptar`,
-                      }).then((result) => {
-                        if (result.isConfirmed) {
-                            window.location = './index.php?action=login'
-                        }
-                      })
+                    swal({
+                    title: "Listo!!!",
+                    text: data.mensaje,
+                    type: "success",
+                    showCancelButton: false,
+                    confirmButtonClass: "btn-success",
+                    confirmButtonText: "Aceptar",
+                    closeOnConfirm: false
+                    },
+                    function(){
+                        window.location = './index.php?action=login'
+                    });
 
                    
                 }else{

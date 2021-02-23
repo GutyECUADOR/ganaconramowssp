@@ -4,17 +4,20 @@
       <div class="col">
         <span class="text-white">SIGUENOS:</span>
 
-        <a href="https://www.facebook.com/ProductosRamo" target="_blank" class="btn btn-social-icon btn-facebook" style="border-radius: 50%; background-color:#f2ce3e">
+        <a href="https://www.facebook.com/ProductosRamo" title="Facebook" target="_blank" class="btn btn-social-icon btn-facebook" style="border-radius: 50%; background-color:#f2ce3e">
           <span class="fa fa-facebook" style="color:#266fbf"></span>
         </a>
-        <a href="https://www.instagram.com/productosramo" target="_blank" class="btn btn-social-icon btn-instagram" style="border-radius: 50%; background-color:#f2ce3e">
+        <a href="https://www.instagram.com/productosramo" title="Instagram" target="_blank" class="btn btn-social-icon btn-instagram" style="border-radius: 50%; background-color:#f2ce3e">
           <span class="fa fa-instagram" style="color:#266fbf"></span>
         </a>
-        <a href="https://twitter.com/ramocolombia" target="_blank" class="btn btn-social-icon btn-twitter" style="border-radius: 50%; background-color:#f2ce3e">
+        <a href="https://twitter.com/ramocolombia" target="_blank" title="Twitter" class="btn btn-social-icon btn-twitter" style="border-radius: 50%; background-color:#f2ce3e">
           <span class="fa fa-twitter" style="color:#266fbf"></span>
         </a>
-        <a href="https://www.youtube.com/channel/UCv5QGIpsfM1xlPzp0F4RrFQ" target="_blank" class="btn btn-social-icon btn-youtube" style="border-radius: 50%; background-color:#f2ce3e">
+        <a href="https://www.youtube.com/channel/UCv5QGIpsfM1xlPzp0F4RrFQ" title="Youtube" target="_blank" class="btn btn-social-icon btn-youtube" style="border-radius: 50%; background-color:#f2ce3e">
           <span class="fa fa-youtube" style="color:#266fbf"></span>
+        </a>
+        <a href="tel:018000000000" target="_blank" title="Linea Nacional" class="btn btn-social-icon btn-youtube" style="border-radius: 50%; background-color:#f2ce3e">
+          <span class="fa fa-phone" style="color:#266fbf"></span>
         </a>
       </div>
       
