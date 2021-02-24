@@ -26,7 +26,7 @@
                 </div>
                 <!--end of col-->
                 <div class="col-lg-8 mb-3 offset-lg-4 text-right d-none d-md-block d-lg-block">
-                  <small class="text-white mt-3">Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095</br> bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                  <small class="text-white mt-3">Promoción válida del 15 de Febrero al 15 de Marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095</br> bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
                 
                 </div>
                 
