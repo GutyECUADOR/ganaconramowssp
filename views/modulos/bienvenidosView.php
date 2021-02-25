@@ -12,7 +12,7 @@
                 </div>
                 <!--end of col-->
                 <div class="col-12 col-lg-5 mb-4 text-center text-lg-right">
-                    <h2 class="text-light text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 1px; color: #feb221 !important; font-size:4rem">¡Bienvenido!</h2>
+                    <h2 class="text-light text-uppercase" style="text-shadow: rgb(8, 0, 0) 1px 1px; color: #feb221 !important; font-size:2.5em">¡Bienvenido!</h2>
                     <h2 class="lead text-light" style="text-shadow: rgb(8, 0, 0) 1px 1px;">Envia tus facturas por compras de Ramo realizadas, <spam style="color:#ffeb00;">entre el 15 de Febrero y el 15 de Marzo al WhatsApp 3223542797</spam> Y acumula puntos para llevarte consolas o bonos.</h2>
             
                
@@ -26,7 +26,7 @@
                 </div>
                 <!--end of col-->
                 <div class="col-lg-8 mb-3 offset-lg-4 text-right d-none d-md-block d-lg-block">
-                  <small class="text-white mt-3">Promoción válida del 15 de febrero al 15 de marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
+                  <small class="text-white mt-3">Promoción válida del 15 de Febrero al 15 de Marzo de 2021. *Número total de premios: 7 Play Station 5 y 1095 bonos c/u de $35.000, que podrán ser de: Netflix, Spotify o Panamericana. Aplican términos y condiciones</small>
                 
                 </div>
                 
