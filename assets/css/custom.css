@@ -121,6 +121,11 @@
 	margin-top:16px;
 }
 
+.mytitle{
+  margin-top: 1%;
+  font-size: 3rem;
+}
+
 .mylogo{
   width: 60%;
 }
@@ -128,7 +133,7 @@
 /*Social Icons Font Awesome*/
 
 
-@media (min-width: 768px){
+@media (max-width: 768px){
   .mylogo{
     width: 40%;
   }
@@ -139,5 +144,20 @@
 
   .main-background{
     background-position:center;
+}
+
+.mytitle{
+  margin-top: 50%;
+  font-size: 30px;
+}
+
+.float{
+  right:5px;
+  bottom:5px;
+}
+
+.float2{
+  right:5px;
+  bottom:70px;
 }
 }
