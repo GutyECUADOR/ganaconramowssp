@@ -32,6 +32,11 @@ class ajaxController  {
         return $response;
     }
 
+    public function getUsuarioBy($valor){
+        $response = $this->ajaxModel->getUsuarioBy($valor, 'cedula');
+        return $response;
+    }
+
     public function postActualizaPuntos($clientePuntos) {
         $response = $this->ajaxModel->postActualizaPuntos($clientePuntos);
         return $response;

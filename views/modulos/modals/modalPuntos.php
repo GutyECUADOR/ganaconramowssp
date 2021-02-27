@@ -32,9 +32,12 @@
             </div>
             <div class="form-group">
               <label for="cedula" class="col-form-label">Documento de Identidad:</label>
-              <input type="text" v-model="clientePuntos.cedula" class="form-control form-control-sm" :class="{ 'is-invalid': errors.cedula?.error }">
+              <input type="text" @keyup="getUsuario()" v-model="clientePuntos.cedula" class="form-control form-control-sm" :class="{ 'is-invalid': errors.cedula.error==true, 'is-valid': errors.cedula.error==false }">
               <div class="invalid-feedback">
-                {{ errors.cedula?.message }}
+                {{ errors.cedula.message }}
+              </div>
+              <div class="valid-feedback">
+                {{ errors.cedula.message }}
               </div>
             </div>
             <div class="form-group">

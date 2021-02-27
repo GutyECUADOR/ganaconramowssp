@@ -31,6 +31,10 @@ class ajax{
       return $this->ajaxController->getAllClientes();
     }
 
+    public function getUsuarioBy($valor) {
+      return $this->ajaxController->getUsuarioBy($valor);
+    }
+
     public function postActualizaPuntos($clientePuntos) {
       return $this->ajaxController->postActualizaPuntos($clientePuntos);
     }
@@ -79,6 +83,18 @@ class ajax{
       case 'getAllClientes':
         $respuesta = $ajax->getAllClientes();
         $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
+        echo json_encode($rawdata);
+
+      break;
+
+      case 'getUsuarioBy':
+        if (isset($_GET['cedula'])) {
+          $valor = $_GET['cedula'];
+          $respuesta = $ajax->getUsuarioBy($valor);
+          $rawdata = array('status' => 'success', 'mensaje' => 'respuesta correcta', 'data'=> $respuesta);
+        }else{
+          $rawdata = array('status' => 'error', 'mensaje' => 'No se ha indicado parámetros.');
+        }
         echo json_encode($rawdata);
 
       break;

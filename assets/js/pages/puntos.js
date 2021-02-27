@@ -16,7 +16,7 @@ const app = new Vue({
     el: '#app',
     data: {
       titulo: 'Lista Clientes',
-      errors: [],
+      errors: new ClientePuntos(),
       clientes: [],
       puntosVenta : [],
       clientePuntos: new ClientePuntos()
@@ -36,13 +36,21 @@ const app = new Vue({
         },
         submitPuntos(e){
             console.log(this.clientePuntos);
-            
-            if (this.clientePuntos.puntoVenta && 
-                this.clientePuntos.nombre && 
-                this.clientePuntos.cedula && 
-                this.clientePuntos.fecha && 
-                this.clientePuntos.valor && 
-                this.clientePuntos.kilos) {
+              this.errors = [];
+              if (!this.clientePuntos.puntoVenta) {
+                this.errors.puntoVenta = {message: 'El punto de venta es obligatorio.', error: true};
+              }
+              if (!this.clientePuntos.nombre) {
+                this.errors.nombre = {message: 'El nombre del punto de venta es obligatorio.', error: true};
+              }
+              if (!this.clientePuntos.factura) {
+                this.errors.factura = {message: 'La factura es obligatorio.', error: true};
+              }
+              if (!this.clientePuntos.cedula) {
+                this.errors.cedula = {message: 'La cédula es obligatoria.', error: true};
+              }
+
+              if (this.errors.length <= 0) {
 
                 let formData = new FormData();
                 formData.append('clientePuntos', JSON.stringify(this.clientePuntos));  
@@ -66,21 +74,25 @@ const app = new Vue({
                 });  
               }
         
-              this.errors = [];
-        
-              if (!this.clientePuntos.puntoVenta) {
-                this.errors.puntoVenta = {message: 'El punto de venta es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.nombre) {
-                this.errors.nombre = {message: 'El nombre del punto de venta es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.factura) {
-                this.errors.factura = {message: 'La factura es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.cedula) {
-                this.errors.cedula = {message: 'La cédula es obligatoria.', error: true};
-              }
-        
+        },
+        getUsuario() {
+          fetch(`./api/index.php?action=getUsuarioBy&cedula=${this.clientePuntos.cedula}`)
+          .then(response => {
+              return response.json();
+          })
+          .then(usuario => {
+            console.log(usuario.data);
+             if (usuario.data) {
+              this.errors.cedula = {message: `El usuario ${usuario.data.nombres} es correcto.`, error: false};
+             }else{
+              this.errors.cedula = {message: 'El usuario no existe en la base de datos', error: true};
+             
+             }
+          }).catch( error => {
+              console.error(error);
+          }); 
+          
+          
         },
         calcularKilos() {
             this.clientePuntos.kilos = this.clientePuntos.valor / 1000

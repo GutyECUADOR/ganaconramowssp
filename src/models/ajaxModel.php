@@ -109,6 +109,7 @@ class ajaxModel extends conexion  {
             SUM(pesos.kilos) as kilosTotal
         FROM usuarios 
             INNER JOIN pesos on pesos.cedula = usuarios.cedula
+        WHERE usuarios.status != '2'
         GROUP BY 
                 usuarios.nombres,
             usuarios.email,
@@ -134,6 +135,33 @@ class ajaxModel extends conexion  {
         }
    
     }
+
+    public function getUsuarioBy($valor, $columna='id') {
+
+        $query = " 
+            SELECT * FROM usuarios WHERE $columna = :valor
+        "; 
+
+        try{
+            $stmt = $this->instancia->prepare($query); 
+            $stmt->bindParam(':valor', $valor); 
+            
+         
+                if($stmt->execute()){
+                    $resulset = $stmt->fetch( \PDO::FETCH_ASSOC );
+                    
+                }else{
+                    $resulset = false;
+                }
+            return $resulset;  
+
+        }catch(\PDOException $exception){
+            return array('status' => 'error', 'mensaje' => $exception->getMessage() );
+        }
+   
+    }
+
+
 
     public function getTotalKilos($cedula) {
 
