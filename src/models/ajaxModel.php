@@ -109,7 +109,12 @@ class ajaxModel extends conexion  {
             SUM(pesos.kilos) as kilosTotal
         FROM usuarios 
             INNER JOIN pesos on pesos.cedula = usuarios.cedula
-        GROUP BY usuarios.nombres
+        GROUP BY 
+                usuarios.nombres,
+            usuarios.email,
+            usuarios.cedula,
+            pesos.factura,
+            pesos.valor
         ORDER BY kilosTotal DESC
         "; 
 
