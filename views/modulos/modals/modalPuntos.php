@@ -11,33 +11,25 @@
         <div class="modal-body">
             <div class="form-group">
               <label for="factura" class="col-form-label">Punto Venta (NIT):</label>
-              <input type="text" v-model="clientePuntos.puntoVenta" class="form-control form-control-sm" :class="{ 'is-invalid': errors.puntoVenta?.error }">
-              <div class="invalid-feedback">
-                {{ errors.puntoVenta?.message }}
-              </div>
+              <input type="text" v-model="clientePuntos.puntoVenta" class="form-control form-control-sm">
             </div>
             <div class="form-group">
               <label for="factura" class="col-form-label">Nombre:</label>
-              <input type="text" v-model="clientePuntos.nombre" class="form-control form-control-sm" :class="{ 'is-invalid': errors.nombre?.error }">
-              <div class="invalid-feedback">
-                {{ errors.nombre?.message }}
-              </div>
+              <input type="text" v-model="clientePuntos.nombre" class="form-control form-control-sm">
+              
             </div>
             <div class="form-group">
               <label for="factura" class="col-form-label">Número de factura:</label>
-              <input type="text" v-model="clientePuntos.factura" class="form-control form-control-sm" :class="{ 'is-invalid': errors.factura?.error }">
-              <div class="invalid-feedback">
-                {{ errors.factura?.message }}
-              </div>
+              <input type="text" v-model="clientePuntos.factura" class="form-control form-control-sm">
             </div>
             <div class="form-group">
               <label for="cedula" class="col-form-label">Documento de Identidad:</label>
-              <input type="text" @keyup="getUsuario()" v-model="clientePuntos.cedula" class="form-control form-control-sm" :class="{ 'is-invalid': errors.cedula.error==true, 'is-valid': errors.cedula.error==false }">
+              <input type="text" @keyup="getUsuario()" v-model="clientePuntos.cedula" class="form-control form-control-sm" :class="{ 'is-invalid': statusCedula.error == true, 'is-valid': statusCedula.error == false }">
               <div class="invalid-feedback">
-                {{ errors.cedula.message }}
+                {{ statusCedula.message }}
               </div>
               <div class="valid-feedback">
-                {{ errors.cedula.message }}
+                {{ statusCedula.message }}
               </div>
             </div>
             <div class="form-group">
@@ -49,7 +41,7 @@
               <input type="number" v-model="clientePuntos.valor" @keyup="calcularKilos()" class="form-control form-control-sm" id="valor">
             </div>
             <div class="form-group">
-              <label for="Kilos" class="col-form-label">Kilos: (Autocalculado)</label>
+              <label for="Kilos" class="col-form-label">Puntos: (Autocalculado)</label>
               <input type="number" v-model="clientePuntos.kilos" class="form-control form-control-sm" id="Kilos" readonly>
             </div>
         </div>

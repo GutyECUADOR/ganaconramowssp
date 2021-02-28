@@ -104,18 +104,14 @@ class ajaxModel extends conexion  {
             usuarios.nombres,
             usuarios.email,
             usuarios.cedula,
-            pesos.factura,
-            pesos.valor,
             SUM(pesos.kilos) as kilosTotal
         FROM usuarios 
-            INNER JOIN pesos on pesos.cedula = usuarios.cedula
+        INNER JOIN pesos ON pesos.cedula = usuarios.cedula
         WHERE usuarios.status != '2'
         GROUP BY 
-                usuarios.nombres,
+            usuarios.nombres,
             usuarios.email,
-            usuarios.cedula,
-            pesos.factura,
-            pesos.valor
+            usuarios.cedula
         ORDER BY kilosTotal DESC
         "; 
 
@@ -241,11 +237,21 @@ class ajaxModel extends conexion  {
             $stmt->execute();
 
             $commit = $this->instancia->commit();
-            return array('status' => 'success', 'mensaje' => 'Los kilos se agregaron correctamente.', 'commit'=>$commit);
+            return array('status' => 'success', 'message' => 'Los puntos se agregaron correctamente.', 'commit'=>$commit);
             
         }catch(\PDOException $exception){
             $this->instancia->rollBack();
-            return array('status' => 'error', 'mensaje' => $exception->getMessage() );
+            switch ($exception->getcode()) {
+                case '23000':
+                    return array('status' => 'error', 'message' => 'Factura o clave unica duplicada, revise que la factura no se haya ingresado anteriormente', 'errorcode' => $exception->getcode());
+                    break;
+                
+                default:
+                    return array('status' => 'error', 'message' => $exception->getMessage(), 'errorcode' => $exception->getcode());
+                    break;
+            }
+
+           
         }
    
     }

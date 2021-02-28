@@ -12,11 +12,18 @@ class ClientePuntos {
 
   }
 
+class ErrorManager {
+    constructor() {
+      this.message = '';
+      this.error = true;
+    }
+}
+
 const app = new Vue({
     el: '#app',
     data: {
       titulo: 'Lista Clientes',
-      errors: new ClientePuntos(),
+      statusCedula: new ErrorManager,
       clientes: [],
       puntosVenta : [],
       clientePuntos: new ClientePuntos()
@@ -35,22 +42,14 @@ const app = new Vue({
             });  
         },
         submitPuntos(e){
-            console.log(this.clientePuntos);
-              this.errors = [];
-              if (!this.clientePuntos.puntoVenta) {
-                this.errors.puntoVenta = {message: 'El punto de venta es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.nombre) {
-                this.errors.nombre = {message: 'El nombre del punto de venta es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.factura) {
-                this.errors.factura = {message: 'La factura es obligatorio.', error: true};
-              }
-              if (!this.clientePuntos.cedula) {
-                this.errors.cedula = {message: 'La cédula es obligatoria.', error: true};
-              }
-
-              if (this.errors.length <= 0) {
+           
+          if (this.clientePuntos.puntoVenta && 
+            this.clientePuntos.nombre && 
+            this.clientePuntos.cedula && 
+            this.clientePuntos.fecha && 
+            this.clientePuntos.valor && 
+            this.clientePuntos.kilos && 
+            this.statusCedula.error == false){
 
                 let formData = new FormData();
                 formData.append('clientePuntos', JSON.stringify(this.clientePuntos));  
@@ -64,15 +63,20 @@ const app = new Vue({
                 })
                 .then(data => {
                     console.log('Puntos Actualizados', data);
-                    this.getAllClientes();
-                    this.clientePuntos = new ClientePuntos();
-                    let flatpickr = $("#fechaPuntos").flatpickr();
-                    flatpickr.clear();
-                    alert(data.mensaje)
+                    if (data.status === 'success') {
+                      this.getAllClientes();
+                      this.clientePuntos = new ClientePuntos();
+                      let flatpickr = $("#fechaPuntos").flatpickr();
+                      flatpickr.clear();
+                      this.statusCedula = new ErrorManager();
+                    }
+                    alert(data.message)
                 }).catch(function(error) {
                     console.error(error);
                 });  
-              }
+            } else {
+              alert('Complete los datos de registro de forma correcta para agregar puntos.');
+            }
         
         },
         getUsuario() {
@@ -82,10 +86,14 @@ const app = new Vue({
           })
           .then(usuario => {
             console.log(usuario.data);
+              this.statusCedula = [];
              if (usuario.data) {
-              this.errors.cedula = {message: `El usuario ${usuario.data.nombres} es correcto.`, error: false};
+              this.statusCedula = ({message: `El usuario ${usuario.data.nombres} es correcto.`, error: false});
+              if (usuario.data.status == '2') {
+                this.statusCedula = ({message:  `El usuario ${usuario.data.nombres} esta baneado de la plataforma.`, error: true});
+              }
              }else{
-              this.errors.cedula = {message: 'El usuario no existe en la base de datos', error: true};
+              this.statusCedula = ({message: 'El usuario no existe en la base de datos', error: true});
              
              }
           }).catch( error => {
