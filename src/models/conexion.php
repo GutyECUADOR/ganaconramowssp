@@ -25,10 +25,10 @@ class conexion {
         /*CONEXION PARA DESAROLLO*/
         $this->driver = 'mysql';
         $this->host = "localhost";
-        $this->dbname = "ganaconramowssp";
+        $this->dbname = $_ENV['DB_NAME'];
         $this->port = "3306";
-        $this->user = "root";
-        $this->pass = "";
+        $this->user = $_ENV['DB_USER'];
+        $this->pass = $_ENV['DB_PASSWORD'];
         $this->charset = "utf8";
         $this->instancia = $this->getInstanciaCNX();
     }
