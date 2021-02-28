@@ -1,5 +1,6 @@
 <?php
 use App\Controllers\ajaxController;
+use Dotenv\Dotenv;
 
 @ob_start();
 date_default_timezone_set('America/Lima');
@@ -11,6 +12,9 @@ if(!isset($_SESSION))
 } 
 
 require_once '../vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable('../');
+$dotenv->load();
 
 class ajax{
   private $ajaxController;
