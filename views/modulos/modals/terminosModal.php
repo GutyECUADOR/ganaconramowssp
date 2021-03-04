@@ -137,7 +137,7 @@
             <p>&nbsp;</p>
             <p><strong>IX &ndash; </strong><strong><u>Dudas y Reclamaciones:</u></strong></p>
             
-            <p>Para cualquier duda o , petici&oacute;n queja o reclamo, comunicarse con nuestro contact call center en Colombia al n&uacute;mero: <strong>(+57) </strong>018000000000</p>
+            <p>Para cualquier duda o , petici&oacute;n queja o reclamo, comunicarse con nuestro contact call center en Colombia al n&uacute;mero: <strong>(+57) </strong>018000180535</p>
             <p>Servicio al cliente Bogot&aacute;: (1)7482000</p>
             <p>Servicio al cliente Barranquilla: (5)3852873</p>
             <p>Servicio al cliente Medell&iacute;n: (4)6049842</p>
